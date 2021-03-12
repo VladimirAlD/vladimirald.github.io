@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 764px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 1180px) {
+  .container {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+}
+@media (max-width: 763px) {
+  .container--subscribe {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

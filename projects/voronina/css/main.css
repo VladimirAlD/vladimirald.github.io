@@ -1,0 +1,45 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.page-wrapper {
+  font-family: 'Source Serif Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1d1c1c;
+}
+@media (min-width: 765px) {
+  .page-wrapper {
+    --c1: transparent;
+    --c2: #f8f8f8;
+    background-image: url("../imgs/Voronina-desktop-assets/Sheet5.png"), url("../imgs/Voronina-desktop-assets/Sheet7.png"), url("../imgs/Voronina-desktop-assets/Sheet3.png"), url("../imgs/Voronina-desktop-assets/Sheet2.png"), url("../imgs/Voronina-desktop-assets/Sheet8.png"), url("../imgs/Voronina-desktop-assets/Sheet4.png"), url("../imgs/Voronina-desktop-assets/Sheet9.png"), url("../imgs/Voronina-desktop-assets/Sheet1.png"), url("../imgs/Voronina-desktop-assets/Sheet6.png"), linear-gradient(to right, var(--c1) 11%, var(--c2) 11%, var(--c2) calc(11% + 2px), var(--c1) calc(11% + 2px), var(--c1) 36%, var(--c2) 36%, var(--c2) calc(36% + 2px), var(--c1) calc(36% + 2px)), linear-gradient(to right, var(--c1) calc(36% + 2px), var(--c1) 62%, var(--c2) 62%, var(--c2) calc(62% + 2px), var(--c1) calc(62% + 2px), var(--c1) 88%, var(--c2) 88%, var(--c2) calc(88% + 2px), var(--c1) calc(88% + 2px), var(--c1) 100%);
+    background-repeat: no-repeat;
+    background-position: 63% 15%, 6% 18%, 90% 19%, 90% 45%, 8% 53%, 63% 68%, 8.5% 73%, 90% 93%, 8.5% 95%, 0 0, 0 0;
+  }
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

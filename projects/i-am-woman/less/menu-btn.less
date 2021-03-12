@@ -1,0 +1,34 @@
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  
+  &__item {
+    display: block;
+    width: 18px;
+    height: 2px;
+
+    background-color: #000;
+
+    &--fwidth {
+      width: 33px;
+    }
+
+    &--left {
+      align-self: flex-start;
+    }
+
+    &--right {
+      align-self: flex-end;
+    }
+  }
+}

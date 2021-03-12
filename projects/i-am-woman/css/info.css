@@ -1,0 +1,84 @@
+.info {
+  display: block;
+}
+.info__call,
+.info__social,
+.info__discount,
+.info__payment {
+  width: 100%;
+  padding-right: 26px;
+  -moz-column-count: 2;
+  column-count: 2;
+  -moz-column-fill: auto;
+  column-fill: auto;
+  -moz-column-gap: normal;
+  column-gap: normal;
+  margin-bottom: 12px;
+}
+@media (min-width: 764px) {
+  .info__call,
+  .info__social,
+  .info__discount,
+  .info__payment {
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+  }
+}
+@media (min-width: 1180px) {
+  .info__call,
+  .info__social,
+  .info__discount,
+  .info__payment {
+    margin-bottom: 22px;
+  }
+}
+.info__add {
+  display: none;
+}
+@media (min-width: 764px) {
+  .info__add {
+    display: inline;
+  }
+}
+.info__phone {
+  position: relative;
+  bottom: 3px;
+}
+.info__term {
+  font-size: 16px;
+  font-weight: 600;
+  color: #342b2b;
+}
+@media (min-width: 1180px) {
+  .info__term {
+    font-size: 18px;
+    -moz-column-width: 40%;
+    column-width: 40%;
+  }
+}
+.info__phone {
+  font-size: 16px;
+  font-weight: 600;
+  color: #342b2b;
+}
+@media (min-width: 1180px) {
+  .info__phone {
+    font-size: 18px;
+  }
+}
+.info__discount {
+  display: none;
+}
+@media (min-width: 1180px) {
+  .info__discount {
+    display: block;
+  }
+}
+.info__payment {
+  display: none;
+}
+@media (min-width: 764px) {
+  .info__payment {
+    display: block;
+  }
+}

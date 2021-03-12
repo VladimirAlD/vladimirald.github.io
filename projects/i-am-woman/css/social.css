@@ -1,0 +1,27 @@
+.social {
+  display: inline-block;
+  padding: 0;
+  list-style: none;
+}
+.social__item {
+  display: block;
+  margin-bottom: 5px;
+}
+.social__item--inline {
+  display: inline-block;
+}
+.social__item--footer {
+  display: inline-block;
+}
+@media (min-width: 764px) {
+  .social__item--footer {
+    margin-right: 15px;
+  }
+}
+.social__dash {
+  display: block;
+  width: 24px;
+  height: 1px;
+  margin: 0 10px;
+  background-color: #000;
+}

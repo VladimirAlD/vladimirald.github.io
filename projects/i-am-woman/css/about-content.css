@@ -1,0 +1,86 @@
+.about-content__container {
+  background-image: linear-gradient(var(--gray8), var(--gray8)), url("../imgs/ahmed-carter-433913-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+@media (min-width: 764px) {
+  .about-content__container {
+    padding-top: 37px;
+    padding-bottom: 70px;
+    background-image: url("../imgs/iamwoman-tablet-assets/ahmed-carter-433913-unsplash.jpg"), url("../imgs/iamwoman-tablet-assets/ahmed-carter-433915-unsplash.jpg");
+    background-size: calc(50% - 10px) auto;
+    background-position: top left, right bottom;
+    max-width: 850px;
+  }
+}
+@media (min-width: 1180px) {
+  .about-content__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    max-width: none;
+    background-image: url("../imgs/iamwoman-desktop-assets/ahmed-carter-433913-unsplash.jpg"), url("../imgs/iamwoman-desktop-assets/ahmed-carter-433915-unsplash.jpg");
+    background-size: calc(50% - 16px) auto;
+  }
+}
+.about-content__article {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 764px) {
+  .about-content__article {
+    width: 63%;
+    background-color: var(--gray8);
+  }
+}
+.about-content__article--first {
+  padding-top: 20px;
+}
+@media (min-width: 764px) {
+  .about-content__article--first {
+    padding: 30px 25px 40px;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1180px) {
+  .about-content__article--first {
+    padding: 30px 40px 45px;
+  }
+}
+.about-content__article--second {
+  padding-top: 22px;
+  padding-bottom: 50px;
+}
+@media (min-width: 764px) {
+  .about-content__article--second {
+    padding: 45px 25px 40px 15px;
+    margin-top: 391px;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1180px) {
+  .about-content__article--second {
+    padding: 60px 40px;
+    margin-top: 515px;
+  }
+}
+.about-content__text {
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 300;
+  color: var(--black);
+  text-align: center;
+}
+.about-content__text--shift {
+  padding-top: 22px;
+}
+@media (min-width: 764px) {
+  .about-content__text {
+    text-align: left;
+  }
+}
+@media (min-width: 1180px) {
+  .about-content__text {
+    font-size: 20px;
+  }
+}

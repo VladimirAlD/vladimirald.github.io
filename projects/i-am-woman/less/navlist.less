@@ -1,0 +1,204 @@
+.navlist {
+  width: 100%;
+  
+  &--header {
+    position: fixed;
+    z-index: 100;
+    display: none;
+    background-image: linear-gradient(var(--gray7), var(--gray7)), url("../imgs/mobile-assets/lauren-fleischmann-469994-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    overflow: auto;
+
+    @media(min-width: 764px) {
+      background-image: linear-gradient(to right, var(--gray) 0, 
+        var(--gray) 50px, var(--gray7) 50px, 
+        var(--gray7) 60%, var(--gray8) 100%), 
+        url("../imgs/mobile-assets/lauren-fleischmann-469994-unsplash.jpg");
+    }
+    @media(min-width: 1180px) {
+      background-image: linear-gradient(to right, var(--gray) 0, 
+        var(--gray) 75px, var(--gray7) 75px, 
+        var(--gray7) 60%, var(--gray8) 100%), 
+        url("../imgs/mobile-assets/lauren-fleischmann-469994-unsplash.jpg");
+    }
+  }
+
+  &__layout {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    
+    &--header {
+      align-items: flex-start;
+      max-width: 380px;
+      height: 100vh;
+      padding-top: 130px;
+      @media(min-width: 764px) {
+        max-width: 83.33333%;
+        padding-top: 200px;
+        padding-left: 50px;
+      }
+      @media(min-width: 1180px) {
+        max-width: 100%;
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__menu-btn {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    @media(min-width: 764px) {
+      top: 40px;
+      left: 9px;
+    }
+    @media(min-width: 1180px) {
+      left: 20px;
+    }
+  }
+  
+  &__menu-close {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    @media(min-width: 764px) {
+      top: 40px;
+    }
+    @media(min-width: 1180px) {
+      right: 90px;
+    }
+  }
+
+  &__column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 0;
+    margin: 0;
+   
+    list-style: none;
+  }
+
+  &__item {
+  }
+  
+  &__link {
+    display: inline-block;
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+
+    @media(min-width: 1180px) {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    &--mobile {
+      display: none;
+      @media(max-width: 764px) {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+
+    &--tablet {
+      display: none;
+      @media(min-width: 764px) {
+        display: inline-block;
+      }
+    }
+
+    &--desktop {
+      display: none;
+      @media(min-width: 1180px) {
+        display: inline-block;
+      }
+    }
+    
+    &:hover {
+      // font-weight: 600;
+      background-image: linear-gradient(transparent 85%, #342b2b 85%, #342b2b calc(85% + 2px), transparent calc(85% + 2px), transparent);
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+    font-size: 18px;
+    font-weight: 600;
+    color: #342b2b;
+
+    &--header {
+      position: absolute;
+      top: -50px;
+      left: 0;
+      font-size: 24px;
+    }
+
+    &--hidden {
+      visibility: hidden;
+    }
+  }
+
+  &__search {
+    display: none;
+    &--tablet {
+      @media(min-width: 764px) and (max-width: 1180px) {
+        display: flex;        
+        position: absolute;
+        left: 0;
+        bottom: -100px;
+    }
+  }
+    &--desktop {
+      @media(min-width: 1180px) {
+        display: flex;
+        margin-bottom: 1em;
+      }
+    }
+    justify-content: flex-start;
+    align-items: center;
+    width: 285px;
+    padding-bottom: 3px;
+
+    border-bottom: 1px solid #000;
+    
+    & img {
+      width: 17px;
+      height: 17px;
+    }
+
+    & input {
+      width: 100%;
+      margin-left: 30px;
+
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 400;
+      color: #342b2b;
+
+      background: none;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+      
+      &::placeholder {
+        font-size: 18px;
+        font-weight: 400;
+        color: #342b2b;
+      }
+    }  
+  }
+}

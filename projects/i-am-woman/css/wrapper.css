@@ -1,0 +1,10 @@
+.posts-wrapper {
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.posts-wrapper__blog-post {
+  margin: 0 15px;
+}

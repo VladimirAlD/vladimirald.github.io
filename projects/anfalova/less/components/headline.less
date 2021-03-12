@@ -1,0 +1,41 @@
+.headline {
+  // word-break: break-word; /* Samsung browser */
+  // word-wrap: break-word; /* IE 11 */
+	// overflow-wrap: anywhere;
+	// -webkit-hyphens: auto;
+	// -ms-hyphens: auto;
+	// hyphens: auto;
+  text-align: right;
+  @media @tablet {
+    text-align: left;
+    width: 50%;
+    @media @desktop {
+      width: 45%;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue Bold", sans-serif;
+    font-size: 3rem;
+    line-height: 4rem;
+    // font-size: 106px;
+    // line-height: 110px;
+    letter-spacing: 0.075em;
+    font-weight: normal;
+    @media @desktop {
+      font-size: 4.5rem;
+      line-height: 6rem;
+    }
+  } 
+
+  span {
+    display: inline-block;
+    font-family: "Avenir Next Cyr Medium", sans-serif;
+    font-size: 1.25rem;
+    // font-size: 27px;
+    // line-height: 19px;
+    font-weight: normal;
+  }
+}

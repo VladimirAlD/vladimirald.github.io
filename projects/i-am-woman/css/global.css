@@ -1,0 +1,57 @@
+:root {
+  --black: #342b2b;
+  --darkred: #79100b;
+  --red: #91171d;
+  --gray: rgba(236, 229, 225);
+  --gray8: rgba(236, 229, 225, 0.8);
+  --gray7: rgba(236, 229, 225, 0.7);
+  --fz-mobile-l: 24px;
+  --indent: 15px;
+  --padding: 15px;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Cormorant', serif;
+  font-size: 16px;
+  font-style: normal;
+  color: #342b2b;
+  vertical-align: 8px;
+  background-color: #fff;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+  background-color: rgba(236, 229, 225, 0.7);
+  /* or add it to the track */
+}
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background-color: #decec5;
+  border-radius: 5px;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}

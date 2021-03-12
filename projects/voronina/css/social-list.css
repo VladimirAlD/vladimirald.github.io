@@ -1,0 +1,16 @@
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 180px;
+  margin: 0 auto;
+  padding: 0;
+}
+.social-list__svg path {
+  fill: #4e4d4e;
+  transition: fill 0.4s;
+}
+.social-list__svg:hover path {
+  fill: #000;
+}

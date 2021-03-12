@@ -1,0 +1,81 @@
+.subscribe {
+  padding: 24px 17px;
+  width: 100%;
+
+  background-image: url("../imgs/ashim-d-silva-89336-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+
+  @media(min-width: 764px) {
+    padding: 51px 84px;
+  }
+  @media(min-width: 1180px) {
+    padding: 42px 152px 62px;
+  }
+
+  &__container {
+    padding: 65px 20px 75px;
+    background-color: var(--gray8);
+
+    @media(min-width: 764px) {
+      padding: 65px 42px 65px;
+    }
+    @media(min-width: 1180px) {
+      padding-top: 72px;
+      padding-bottom: 80px;
+    }
+  }
+  
+  &__text {
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #91171d;
+    text-align: center;
+
+    @media(min-width: 764px) {
+      font-size: 24px;
+      margin-bottom: 28px;
+    }
+    @media(min-width: 1180px) {
+      font-size: 36px;
+      margin-bottom: 34px;
+    }
+  }
+  
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+
+  &__mail {
+    margin-bottom: 42px;
+
+    @media(min-width: 764px) {
+      margin-bottom: 28px;
+    }
+    @media(min-width: 1180px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__submit {
+    margin-bottom: 8px;
+
+    @media(min-width: 1180px) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__rule {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+  }
+}

@@ -1,0 +1,22 @@
+.legacy {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+  text-align: right;
+  font-family: "Avenir Next Cyr Regular", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgba(255,255,255,.3);
+  @media @desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__text {
+    padding: 0;
+    margin: 0;
+  }
+}

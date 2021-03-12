@@ -1,0 +1,90 @@
+.social-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+
+  &--header {
+    justify-content: space-between;
+  }
+
+  &--footer {
+    // margin: 0 auto;
+    justify-content: space-around;
+    @media @desktop {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+
+    &--tel {
+      width: 100%;
+      text-align: center;
+      @media @desktop {
+        width: auto;
+      }
+    }
+
+    &--footer a::before {
+      @side-size: 60px;
+      @border-width: 2px;
+
+      content: '';
+      position: absolute;
+      top: 50%-@border-width/2;
+      left: 50%-@border-width/2;
+      transform: translate(-50%, -50%);
+      width: @side-size;
+      height: @side-size;
+      border: @border-width solid #fff;
+      border-radius: 50%;
+
+      transition: all .25s ease-in-out;
+      @media @tablet {
+        @side-size: 75px;
+        width: @side-size;
+        height: @side-size;
+      }
+    }
+
+    &--header:hover svg {
+      fill: rgb(72,215,187);
+    }
+
+    &--footer a:hover::before {
+      box-shadow: inset 0 0 10px rgba(255,255,255,1);
+    }
+
+    & svg {
+      fill: #fff;
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__tel {
+    display: none;
+    @media @tablet {
+      display: block;
+      font-family: "Avenir Next Cyr Medium", sans-serif;
+      font-weight: normal;
+      font-size: 1.2rem;
+      color: #fff;
+      word-wrap: none;
+    }
+  }
+}

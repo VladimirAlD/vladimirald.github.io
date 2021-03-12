@@ -1,0 +1,16 @@
+.about-bg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 0;
+  border: 1px solid red;
+}
+.about-bg__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 16px;
+}
+.about-bg__img--offset {
+  margin-top: 440px;
+}

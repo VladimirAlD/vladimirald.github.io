@@ -1,0 +1,156 @@
+.rst() {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  &__social {
+    display: none;
+  }
+  @media (min-width: 765px) {
+    background-color: #f8f8f8;
+    &__social {
+      display: block;
+      padding-top: 200px;
+      padding-bottom: 80px;
+      color: rgba(33,32,33,.4);
+      @media (min-width: 1441px){
+        padding-top: 240px;
+        padding-bottom: 35px;
+      }
+      & a {
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: rgba(33,32,33,.4);
+        @media (min-width: 1441px){
+          font-size: 14px;
+        }
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+  &__navbar {
+    padding-bottom: 160px;
+    @media (min-width: 765px) {
+      padding-bottom: 230px;
+    }
+  }
+  &__bordered {
+    position: relative;
+    &::before {
+      content: '';
+      box-sizing: border-box;
+      position: absolute;
+      top: -85px;
+      right: 12px; // 27px - 15px margin
+      
+      width: 110%;
+      height: 220%;
+
+      border: 6px solid #8eb574;
+      z-index: -1;
+      @media (min-width: 765px){
+        display: none;
+      }
+    }
+  }
+  &__wrapper {
+    position: relative;
+    margin: 0 -15px; //
+    padding: 0 15px 150px; // fix container width
+
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), 
+                      url("../imgs/daria-litvinova-342840-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    z-index: 1;
+    @media (min-width: 765px){
+      position: relative;
+      margin: 0 -60px; //
+      padding: 0 60px 0; // fix container width
+
+      background: none;
+      background-image: url("../imgs/daria-litvinova-342840-unsplash.jpg"),
+                        url("../imgs/Voronina-tablet-assets/ramka.png"),
+                        url("../imgs/Voronina-tablet-assets/karly-gomez-360069-unsplash (1).jpg");
+      background-repeat: no-repeat;
+      background-position: 88% 50%, 104% 67%, right center;
+      background-size: 325px auto, auto 85%, auto 100%;
+    }
+    @media (min-width: 1441px){
+      position: relative;
+      margin: 0 -130px; //
+      padding: 0 130px 0; // fix container width
+
+      background: none;
+      background-image: url("../imgs/Voronina-desktop-assets/daria-litvinova-342840-unsplash.jpg"),
+                        url("../imgs/Voronina-desktop-assets/ramka.png"),
+                        url("../imgs/Voronina-desktop-assets/karly-gomez-360069-unsplash (1).jpg");
+      background-repeat: no-repeat;
+      background-position: 61% 65%, 93% 100px, right center;
+      background-size: auto, auto, auto;
+    }
+  }
+  &__title {
+    .rst();
+    position: relative;
+    padding-bottom: 10px;
+
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    @media (min-width: 765px){
+      font-size: 36px;
+      color: #212021;
+      @media (min-width: 1441px){
+        font-size: 48px;
+      }
+      &::before, &::after {
+        position: absolute;
+        color: #fffeff;
+        font-size: 48px;
+        z-index: -1;
+      }
+      &::before {
+        content: 'Food';
+        top: -25px;
+        left: -40px;
+        @media (min-width: 1441px){
+          font-size: 83px;
+          top: -40px;
+          left: -30px;
+        }
+      }
+      &::after {
+        content: 'Photography';
+        top: 10px;
+        left: 70px;
+        @media (min-width: 1441px){
+          font-size: 52px;
+          top: 24px;
+          left: 188px;
+        }
+      }
+    }
+  }
+  &__text {
+    .rst();
+    display: block;
+    padding-bottom: 30px;
+
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    @media (min-width: 765px){
+      font-size: 16px;
+      color: #212021;
+    }
+    @media (min-width: 1441px){
+      font-size: 18px;
+    }
+  }
+}

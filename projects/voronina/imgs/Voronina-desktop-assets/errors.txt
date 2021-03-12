@@ -1,0 +1,5 @@
+[2019-07-04 22:24:57] layer "+ 7 916 66 77 112": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2019-07-04 22:24:58] layer "daria.voronina": Unsupported extension: voronina
+[2019-07-04 22:24:58] layer "daria.voronina@gmail.com": Unsupported extension: com
+[2019-07-04 22:24:58] layer "+ 7 916 66 77 112": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2019-07-04 22:24:57] layer "Tel.: daria.voronina@gmail.com Mail: + 7 916 66 77 112": Expected end of input but "M" found.

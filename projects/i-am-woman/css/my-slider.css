@@ -1,0 +1,20 @@
+.my-slider {
+  position: relative;
+}
+.my-slider__btn {
+  position: absolute;
+  top: 45%;
+  color: #342b2b;
+  border: none;
+  background: none;
+  font-size: 25px;
+  line-height: 25px;
+}
+.my-slider__btn--prev {
+  position: absolute;
+  left: 15px;
+}
+.my-slider__btn--next {
+  position: absolute;
+  right: 15px;
+}

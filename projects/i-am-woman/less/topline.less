@@ -1,0 +1,41 @@
+.site-header {
+  position: relative;
+  width: 100%;  
+
+  &__container {
+    position: absolute;
+    top: 9px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 320px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media(min-width: 764px) {
+      padding-left: 9px;
+      padding-right: 60px;
+      top: 40px;
+    }
+    @media(min-width: 1440px) {
+      padding-left: 20px;
+      padding-right: 220px;
+    }
+  }
+
+  &__icons {
+    position: relative;
+    top: 3px;
+    width: 105px;
+
+    @media(min-width: 764px) {
+      width: 221px;
+    }
+
+    @media(min-width: 1180px) {
+      width: 291px;
+    }
+  }
+}

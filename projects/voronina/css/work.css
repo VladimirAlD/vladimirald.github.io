@@ -1,0 +1,30 @@
+.work__img {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.work__tag {
+  margin-bottom: 11px;
+  font-size: 12px;
+  font-weight: 300;
+}
+@media (min-width: 1441px) {
+  .work__tag {
+    font-size: 14px;
+  }
+}
+.work__title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+@media (min-width: 765px) {
+  .work__title {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1441px) {
+  .work__title {
+    font-size: 18px;
+  }
+}

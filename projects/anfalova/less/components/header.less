@@ -1,0 +1,43 @@
+.site-header {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  
+  color: #fff;
+  
+  background-image: url(../imgs/head-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  @media @tablet {
+    background-position: 60% 0;
+  }
+  @media @desktop {
+    background-position: center bottom;
+  }
+
+  &__main-nav {
+    margin-bottom: 150px;
+    @media @tablet {
+      margin-bottom: 100px;
+    }
+    @media @desktop {
+      margin-bottom: 200px;
+    }
+  }
+
+  &__headline {
+    margin-bottom: 100px;
+    @media @tablet {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__btn {
+    margin-left: auto;
+    @media @tablet {
+      margin-left: 0;
+    }
+  }
+}

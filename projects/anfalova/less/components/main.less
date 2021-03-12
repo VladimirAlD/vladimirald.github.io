@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0 auto;
+  padding: 0;
+
+  font-size: 100%;
+}
+
+.site-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+
+  color: #212f3d;
+  font-family: "Avenir Next Cyr Medium", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.site-main {
+  flex: 1 0 auto;
+  padding-bottom: 30px;
+  background-image: url(../../imgs/foot-bg.jpg);
+  background-size: contain;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+
+  &__section {
+    margin-bottom: 50px;
+  }
+}
+
+.site-footer {
+  margin-top: auto;
+  flex-shrink: 0;
+  background-color: #132230;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+::selection {
+  background-color: rgb(72,215,187);
+  color: #fff;
+}

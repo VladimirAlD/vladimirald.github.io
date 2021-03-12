@@ -1,0 +1,57 @@
+.btn {
+  --color: #fff;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color);
+
+  border-bottom: 2px solid var(--color);
+
+  @media (min-width: 765px){
+    --color: #212021;
+  }
+  
+  &::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 26px;
+    height: 2px;
+
+    background-color: var(--color);
+    transition: all .5s;
+  }
+
+  &:hover {
+    & {
+      border-bottom-color: transparent;
+    }
+  }
+
+  &--more::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    top: 50%;
+    left: 100%;
+    transform: translate(0, -45%);
+    width: 24px;
+    height: 27px;
+    margin-left: 15px;
+    background-image: url("../imgs/Voronina-tablet-assets/pdf.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+    @media (min-width: 765px){
+      width: 32px;
+      height: 36px;
+    }
+  }
+}

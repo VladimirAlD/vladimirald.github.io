@@ -1,0 +1,6 @@
+.comma {
+  position: relative;
+  top: 5px;
+  display: inline-block;
+  transform: rotate(180deg);
+}

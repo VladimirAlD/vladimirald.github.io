@@ -1,0 +1,204 @@
+/* PREREQUISITED CSS STYLES FOR LORY.JS */
+.slider {
+  position: relative;
+}
+.slider__frame {
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.slider__slide-wrapper {
+  display: block;
+  text-align: center;
+}
+@media (min-width: 764px) {
+  .slider__slide-wrapper {
+    display: inline-block;
+  }
+}
+.slider__item {
+  position: relative;
+  display: inline-block;
+  line-height: normal;
+}
+/* CUSTOM CSS STYLES FOR THE PEN AND THE SLIDER */
+.slider--intro {
+  position: relative;
+  width: 68.75vmin;
+}
+@media (min-width: 764px) {
+  .slider--intro {
+    width: 393px;
+  }
+}
+@media (min-width: 1180px) {
+  .slider--intro {
+    width: 605px;
+  }
+}
+.slider--merch {
+  --width: calc(100vw - 15px * 2);
+  width: var(--width);
+  margin: 0 auto;
+  margin-top: 15px;
+}
+@media (min-width: 764px) {
+  .slider--merch {
+    --width: calc(100vw - 20px * 2);
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1180px) {
+  .slider--merch {
+    --width: calc(1180px - 37px * 2);
+    margin-top: 60px;
+  }
+}
+.slider--blog {
+  --width: calc(100vw - 15px * 2);
+  width: var(--width);
+  margin: 0 auto;
+}
+@media (min-width: 764px) {
+  .slider--blog {
+    --width: calc(100vw - 27px * 2);
+  }
+}
+.slider__frame--intro {
+  width: 100%;
+  margin: 0 auto;
+}
+.slider__frame--merch {
+  width: calc(var(--width) - 24px * 2);
+  margin: 0 auto;
+}
+@media (min-width: 764px) {
+  .slider__frame--merch {
+    width: var(--width);
+  }
+}
+.slider__frame--blog {
+  width: calc(var(--width) - 24px * 2);
+  margin: 0 auto;
+}
+@media (min-width: 764px) {
+  .slider__frame--blog {
+    width: var(--width);
+  }
+}
+.slider__item--intro {
+  width: 100%;
+}
+.slider__item--merch {
+  width: 100%;
+}
+@media (min-width: 764px) {
+  .slider__item--merch {
+    width: calc((var(--width) - 40px) / 3);
+    margin-right: 20px;
+  }
+  .slider__item--merch:last-child {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1180px) {
+  .slider__item--merch {
+    width: calc((var(--width) - 60px) / 3);
+    margin-right: 30px;
+  }
+}
+.slider__item--blog {
+  width: 100%;
+}
+@media (min-width: 764px) {
+  .slider__item--blog {
+    width: calc((var(--width) - 20px) / 2);
+    margin-right: 20px;
+  }
+  .slider__item--blog:last-child {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1180px) {
+  .slider__item--blog {
+    width: calc((var(--width) - 40px) / 3);
+  }
+}
+.slider__intro-nav {
+  display: none;
+}
+@media (min-width: 764px) {
+  .slider__intro-nav {
+    position: relative;
+    top: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 80px;
+  }
+}
+.slider__merch-nav {
+  position: absolute;
+  top: 40%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.slider__btn {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #952126;
+  background: none;
+  border: none;
+}
+@media (min-width: 1180px) {
+  .slider__btn {
+    font-size: 22px;
+  }
+}
+.slider__btn--padding {
+  padding: 0 10px;
+}
+@media (min-width: 1180px) {
+  .slider__btn--padding {
+    padding: 0 22px;
+  }
+}
+.slider__btn--prev {
+  left: 0;
+}
+.slider__btn--next {
+  right: 0;
+}
+.slider__btn--prev,
+.slider__btn--next {
+  display: block;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--black);
+  background: none;
+  border: none;
+  outline: none;
+}
+@media (min-width: 764px) {
+  .slider__btn--prev,
+  .slider__btn--next {
+    display: none;
+  }
+}
+.slider__link {
+  display: none;
+}
+@media (min-width: 764px) {
+  .slider__link {
+    position: absolute;
+    right: 0;
+    display: block;
+    font-size: 16px;
+  }
+}

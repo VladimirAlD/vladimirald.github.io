@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro/MyriadPro-Regular.eot');
+  src: local('Myriad Pro Regular'), local('MyriadPro-Regular'), url('../fonts/MyriadPro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro/MyriadPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Medium.eot');
+  src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/Roboto/Roboto-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans/OpenSans-Light.eot');
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('../fonts/OpenSans/OpenSans-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Light.woff') format('woff'), url('../fonts/OpenSans/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans/OpenSans-Regular.eot');
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('../fonts/OpenSans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../fonts/Cormorant/Cormorant-Light.eot');
+  src: local('Cormorant Light'), local('Cormorant-Light'), url('../fonts/Cormorant/Cormorant-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Cormorant/Cormorant-Light.woff') format('woff'), url('../fonts/Cormorant/Cormorant-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../fonts/Cormorant/Cormorant-Regular.eot');
+  src: local('Cormorant Regular'), local('Cormorant-Regular'), url('../fonts/Cormorant/Cormorant-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Cormorant/Cormorant-Regular.woff') format('woff'), url('../fonts/Cormorant/Cormorant-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../fonts/Cormorant/Cormorant-Medium.eot');
+  src: local('Cormorant Medium'), local('Cormorant-Medium'), url('../fonts/Cormorant/Cormorant-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Cormorant/Cormorant-Medium.woff') format('woff'), url('../fonts/Cormorant/Cormorant-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../fonts/Cormorant/Cormorant-SemiBold.eot');
+  src: local('Cormorant SemiBold'), local('Cormorant-SemiBold'), url('../fonts/Cormorant/Cormorant-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Cormorant/Cormorant-SemiBold.woff') format('woff'), url('../fonts/Cormorant/Cormorant-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}

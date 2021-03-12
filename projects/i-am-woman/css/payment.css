@@ -1,0 +1,9 @@
+.payment {
+  display: inline-block;
+}
+.payment__rule {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  white-space: nowrap;
+}

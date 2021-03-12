@@ -1,0 +1,120 @@
+.after() {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-48%, -50%);
+
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #f8f8f8;
+
+  z-index: -1;
+  @media (min-width: 765px){
+    font-size: 70px;
+  }
+  @media (min-width: 1441px){
+    font-size: 108px;
+  }
+}
+
+.section {
+  position: relative;
+  margin-top: 140px;
+  &__social {
+    display: none;
+  }
+  @media (min-width: 1441px) {
+    &__social {
+      position: absolute;
+      top: 50%;
+      left: calc(90% + 50px);
+      transform: translate(0, -50%) rotate(90deg);
+      display: block;
+      width: 200px;
+      text-align: center;
+      & a {
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: rgba(33,32,33,.4);
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+  &__wrapper {
+    position: relative;
+    @media (min-width: 765px){
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      grid-gap: 17px;
+      & > .work:first-of-type {
+        padding-top: 100px;
+      }
+      & > .work:last-of-type {
+        padding-top: 120px;
+      }
+    }
+    @media (min-width: 1441px){
+      padding-left: 40px;
+      padding-right: 40px;
+      grid-gap: 35px;
+    }
+  }
+  &__header {
+    position: relative;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    @media (min-width: 765px){
+      font-size: 24px;
+    }
+    @media (min-width: 1441px){
+      font-size: 36px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 200%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      height: 30px;
+      width: 3px;
+      
+      background-color: #d7b0bc;
+      z-index: 1;
+    }
+
+    &--work::after {
+      content: 'work';
+      .after();
+    }
+    &--about::after {
+      content: 'about';
+      .after();
+    }
+    &--price::after {
+      content: 'price';
+      .after();
+    }
+    &--contact::after {
+      content: 'contacts';
+      .after();
+      font-size: 40px;
+    }
+  }
+  &__more {
+    padding-bottom: 40px;
+  }
+}

@@ -1,0 +1,10 @@
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.icons__link {
+  text-decoration: none;
+}

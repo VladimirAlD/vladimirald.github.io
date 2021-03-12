@@ -1,0 +1,28 @@
+.menu-close {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23px;
+  height: 23px;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+}
+.menu-close::before,
+.menu-close::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 141.421%;
+  height: 2px;
+  background-color: #000;
+}
+.menu-close::before {
+  transform: rotate(45deg);
+}
+.menu-close::after {
+  transform: rotate(-45deg);
+}

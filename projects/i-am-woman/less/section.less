@@ -1,0 +1,88 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--red);
+
+    @media(min-width: 764px) {
+      font-size: 36px;
+    }
+    @media(min-width: 1180px) {
+      font-size: 48px;
+    }
+
+    &--new-merch {
+      margin-bottom: 28px;
+      @media(min-width: 764px) {
+        margin-bottom: 15px;
+      }
+    }
+    &--about {
+      margin-bottom: 40px;
+      @media(min-width: 764px) {
+        margin-bottom: 55px;
+      }
+      @media(min-width: 1180px) {
+        margin-bottom: 105px;
+      }
+    }
+    &--blog {
+      margin-bottom: 6px;
+      @media(min-width: 764px) {
+        margin-bottom: 48px;
+      }
+      @media(min-width: 1180px) {
+        margin-bottom: 117px;
+      }
+    }
+  }
+
+  &__btn {
+    margin: 0 9px;
+
+    @media(min-width: 1180px) {
+      margin: 0 20px;
+    }
+  }
+
+  &__footer {
+    margin-top: 35px;
+
+    @media(min-width: 764px) {
+      margin-top: 65px;
+    }
+
+    &--blog {
+      margin-top: 106px;
+
+      @media(min-width: 764px) {
+        margin-top: 62px;
+      }
+      @media(min-width: 1180px) {
+        margin-top: 108px;
+      }
+    }
+  }
+}

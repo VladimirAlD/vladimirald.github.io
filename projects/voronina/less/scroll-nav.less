@@ -1,0 +1,49 @@
+.scroll-nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  z-index: 10;
+  &__item {
+    display: block;
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14;
+    color: transparent;
+    text-align: center;
+    font-style: italic;
+    z-index: 10;
+    transition: all .6s ease-in-out;
+    &::after  {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 11px;
+      height: 1px;
+      background-color: #c8c9ca;
+      transition: all .5s ease-in-out;
+    }
+    &--active {
+      color: #212121;
+      &::after {
+        background-color: #000;
+        width: 37px;
+        height: 2px;
+      }
+    }
+    &:hover {
+      color: #212121;
+      &::after {
+        background-color: #000;
+        width: 37px;
+        height: 2px;
+      }
+    }
+  }
+}

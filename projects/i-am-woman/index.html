@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SwedishBitter</title>
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* Mobile layout by default */
+      background-image: url( "./pp/img/mobile.png" );
+    }
+    /* Tablet */
+    @media ( min-width: 764px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url( "./pp/img/tablet.png" );
+      }
+    }
+    /* Desktop */
+    @media ( min-width: 1180px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url( "./pp/img/desktop.png" );
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="./pp/styles.css">
+  <script src="./pp/script.js"></script>
+  <!-- // Pixel Glass -->
+  <link rel="stylesheet" href="./css/tiny-slider.css">
+  <link rel="stylesheet" href="./fonts/FontAwesomePro/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/lory.min.js"></script>
+  <script src="./js/tiny-slider.js"></script>
+  <script src="./js/TweenMax.min.js"></script>
+</head>
+<body class="site-wrapper">
+  <header class="site-header">
+    <div class="site-header__container">
+      <button id="open" class="menu-btn">
+        <span class="menu-btn__item menu-btn__item--fwidth"></span>
+        <span class="menu-btn__item menu-btn__item--right"></span>
+        <span class="menu-btn__item menu-btn__item--left"></span>
+      </button>
+      <p class="site-header__icons icons">
+        <a class="icons__link" href="#">
+          <img class="icons__img" src="./imgs/magnifying-glass.svg" width="16px" height="16px" alt="">
+        </a>
+        <a class="icons__link" href="#">
+          <img class="icons__img" src="./imgs/avatar.svg" width="14px" height="16px" alt="">
+        </a>
+        <a class="icons__link" href="#">
+          <img class="icons__img" src="./imgs/shopping-bag.svg" width="15px" height="16px" alt="">
+        </a>
+      </p>
+    </div>
+    <nav class="navlist navlist--header">
+      <div class="container">
+        <div class="navlist__layout navlist__layout--header">
+          <button class="menu-btn navlist__menu-btn">
+            <span class="menu-btn__item menu-btn__item--fwidth"></span>
+            <span class="menu-btn__item menu-btn__item--right"></span>
+            <span class="menu-btn__item menu-btn__item--left"></span>
+          </button>
+          <button id="close" class="menu-close navlist__menu-close"></button>
+          <ul class="navlist__column">
+            <li class="navlist__item"><h2 class="navlist__title navlist__title--header">Каталог</h2></li>
+            <li class="navlist__item"><a class="navlist__link" href="#">Пальто</a></li>
+            <li class="navlist__item"><a class="navlist__link" href="#">Жилеты и жакеты</a></li>
+            <li class="navlist__item"><a class="navlist__link" href="#">Костюмы</a></li>
+            <li class="navlist__item"><a class="navlist__link" href="#">Трикотаж</a></li>
+            <li class="navlist__item"><a class="navlist__link" href="#">Платья</a></li>
+            <li class="navlist__item"><a class="navlist__link" href="#">Блузы и топы</a></li>
+            <li class="navlist__item"><a class="navlist__link" href="#">Футболки</a></li>
+            <li class="navlist__item"><a class="navlist__link" href="#">Юбки и брюки</a></li>
+            <li class="navlist__item"><a class="navlist__link" href="#">Аксессуары</a></li>
+            <li class="navlist__search navlist__search--tablet">
+              <img src="./imgs/magnifying-glass.svg" alt="">
+              <input type="text" placeholder="Найти на сайте">
+            </li>
+          </ul>
+          <ul class="navlist__column">
+            <li class="navlist__item"><a class="navlist__link" href="#">О бренде</a></li>
+            <li class="navlist__item"><a class="navlist__link" href="#">Оферта</a></li>
+            <li class="navlist__item"><a class="navlist__link" href="#">Оплата и доставка</a></li>
+            <li class="navlist__item"><a class="navlist__link" href="#">Возврат</a></li>
+            <li class="navlist__item"><a class="navlist__link" href="#">Контакты</a></li>
+            <li class="navlist__item"><a class="navlist__link" href="#">Отзывы</a></li>
+            <li class="navlist__item"><a class="navlist__link navlist__link--mobile" href="#">New</a></li>
+            <li class="navlist__item"><a class="navlist__link navlist__link--mobile" href="#">Sale</a></li>
+          </ul>
+          <ul class="navlist__column">
+            <li class="navlist__item"><a class="navlist__link navlist__link--tablet" href="#">Sale</a></li>
+            <li class="navlist__item"><a class="navlist__link navlist__link--tablet" href="#">New</a></li>
+            <li class="navlist__item"><a class="navlist__link navlist__link--tablet" href="#">Looks</a></li>
+            <li class="navlist__item"><a class="navlist__link navlist__link--tablet" href="#">Блог</a></li>
+            <li class="navlist__item"><a class="navlist__link navlist__link--tablet" href="#">Streetstyle</a></li>
+            <li class="navlist__item"><a class="navlist__link navlist__link--tablet" href="#">Войти в личный кабинет</a></li>
+          </ul>
+          <ul class="navlist__column navlist__column--tablet">
+            <li class="navlist__search navlist__search--desktop">
+              <img src="./imgs/magnifying-glass.svg" alt="">
+              <input type="text" placeholder="Найти на сайте">
+            </li>
+            <li class="navlist__item"><a class="navlist__link navlist__link--desktop" href="#">Войти в личный кабинет</a></li>
+            <li class="navlist__item"><a class="navlist__link navlist__link--desktop" href="#">Отзывы</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="site-intro js__bg-product">
+    <aside class="site-intro__aside">
+      <p class="site-intro__offer">Распродажа  SS’18</p>
+    </aside>
+    <div class="container site-intro__container">
+      <div class="site-intro__description"> 
+        <a class="site-intro__logo logo">
+          <span class="logo__brand">I am woman</span>
+          <span class="logo__town">moscow</span>
+        </a>
+        <div class="site-intro__banner">
+          <h2 class="site-intro__title">Новая
+            <br> круизная <span class="nowrap-text">коллекция <span class="comma">,</span><span class="site-intro__bg-numb">19</span></span></h2>
+          <a class="link link--color_r link--underline_r" href="#">Перейти в каталог</a>
+        </div>
+        <ul class="site-intro__social social">
+          <li class="social__item social__item--inline">
+            <a class="link" href="#">Facebook</a>
+          </li>
+          <li class="social__item social__item--inline">
+            <span class="social__dash"></span>
+          </li>
+          <li class="social__item social__item--inline">
+            <a class="link" href="#">YouTube</a>
+          </li>
+          <li class="social__item social__item--inline">
+            <span class="social__dash"></span>
+          </li>
+          <li class="social__item social__item--inline">
+            <a class="link" href="#">Vkontakte</a>
+          </li>
+        </ul>
+      </div>
+      <div class="site-intro__slider">
+
+        <div class="slider slider--intro js__slider-intro">
+          <div class="slider__frame slider__frame--intro js__frame">
+
+            <ul class="slider__slide-wrapper slider__slide-wrapper--intro js__slides">
+              <li class="slider__item slider__item--intro js__slide" data-index-number="01">
+                <figure class="product" >
+                  <figcaption class="product__title">
+                    <span class="product__name">Хлопковое платье в полоску</span>
+                    <span class="product__price">9 900 рублей</span>
+                  </figcaption>
+                  <picture>
+                    <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/icons8-team-355985-unsplash.jpg">
+                    <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/icons8-team-355985-unsplash.jpg">
+                    <img class="product__img" src="./imgs/iamwoman-mobile-assets/icons8-team-355985-unsplash.jpg" alt="Flowers" style="width:auto;">
+                  </picture>
+                </figure>
+              </li>
+              <li class="slider__item slider__item--intro js__slide" data-index-number="02">
+                <figure class="product" >
+                  <figcaption class="product__title">
+                    <span class="product__name">Спортивный желтый костюм</span>
+                    <span class="product__price">9 900 рублей</span>
+                  </figcaption>
+                  <picture>
+                    <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/dom-hill-512919-unsplash.jpg">
+                    <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/dom-hill-512919-unsplash.jpg">
+                    <img class="product__img" src="./imgs/iamwoman-mobile-assets/dom-hill-512919-unsplash.jpg" alt="Flowers" style="width:auto;">
+                  </picture>
+                </figure>
+              </li>
+              <li class="slider__item slider__item--intro js__slide" data-index-number="03">
+                <figure class="product" >
+                  <figcaption class="product__title">
+                    <span class="product__name">Платье – халат со стразами</span>
+                    <span class="product__price">9 900 рублей</span>
+                  </figcaption>
+                  <picture>
+                    <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/raechel-romero-309859-unsplash.jpg">
+                    <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/raechel-romero-309859-unsplash.jpg">
+                    <img class="product__img" src="./imgs/iamwoman-mobile-assets/raechel-romero-309859-unsplash.jpg" alt="Flowers" style="width:auto;">
+                  </picture>
+                </figure>
+              </li>
+            </ul>
+          
+            <div class="slider__intro-nav">
+              <p class="intro-nav">
+                <button class="slider__btn slider__btn--padding js__prev">
+                  <i class="fal fa-chevron-left"></i>
+                </button>
+                <span class="intro-nav__count js__countProd">01</span>
+                <span class="intro-nav__slash">/</span>
+                <span class="intro-nav__count intro-nav__count--total">3</span>
+                <button class="slider__btn slider__btn--padding js__next">
+                  <i class="fal fa-chevron-right"></i>
+                </button>
+              </p>
+              <a class="slider__link link" href="#">Смотреть все</a>
+            </div>
+            
+          </div>  
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Новые поступления -->
+  <section class="site-wrapper__section section">
+    <header class="section__header">
+      <h2 class="section__title section__title--new-merch">Новое поступление</h2>
+      <p class="section__nav">
+        <button class="section__btn btn">Платья</button>
+        <button class="section__btn btn">Блузы и топы</button>
+        <button class="section__btn btn">Брюки и юбки</button>
+      </p>
+    </header>
+    <!-- <div class="container my-slider"> -->
+      <div class="slider slider--merch js__slider-merch">
+        <div class="slider__frame slider__frame--merch js__frame">
+          <ul class="slider__slide-wrapper slider__slide-wrapper--merch js__slides">
+            <li class="slider__item slider__item--merch js__slide">
+              <figure class="new-merch">
+                <div class="new-merch__product">
+                  <span class="new-merch__like">
+                    <i class="fal fa-heart"></i>
+                  </span>
+                  <picture>
+                    <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/alex-iby-317332-unsplash.jpg">
+                    <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/alex-iby-317332-unsplash.jpg">
+                    <img class="new-merch__img" src="./imgs/iamwoman-mobile-assets/alex-iby-317332-unsplash.jpg" alt="Flowers" style="width:auto;">
+                  </picture>
+                  <p class="new-merch__nav">
+                    <button class="new-merch__btn"><i class="fal fa-chevron-left"></i></button>
+                    <span class="new-merch__nav-slash"></span>
+                    <button class="new-merch__btn"><i class="fal fa-chevron-right"></i></button>
+                  </p>
+                </div>
+                <figcaption class="new-merch__title">
+                  <span class="new-merch__name">Платье - боди</span>
+                  <span class="new-merch__price">11 700 рублей</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="slider__item slider__item--merch js__slide">
+              <figure class="new-merch">
+                <div class="new-merch__product">
+                  <span class="new-merch__like">
+                    <i class="fal fa-heart"></i>
+                  </span>
+                  <picture>
+                    <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/ao-276766-unsplash.jpg">
+                    <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/ao-276766-unsplash.jpg">
+                    <img class="new-merch__img" src="./imgs/iamwoman-mobile-assets/ao-276766-unsplash.jpg" alt="Flowers" style="width:auto;">
+                  </picture>
+                  <p class="new-merch__nav">
+                    <button class="new-merch__btn"><i class="fal fa-chevron-left"></i></button>
+                    <span class="new-merch__nav-slash"></span>
+                    <button class="new-merch__btn"><i class="fal fa-chevron-right"></i></button>
+                  </p>
+                </div>
+                <figcaption class="new-merch__title">
+                  <span class="new-merch__name">Этническое платье</span>
+                  <span class="new-merch__price">7 800 рублей</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="slider__item slider__item--merch js__slide">
+              <figure class="new-merch">
+                <div class="new-merch__product">
+                  <span class="new-merch__like">
+                    <i class="fal fa-heart"></i>
+                  </span>
+                  <picture>
+                    <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/flaunter-com-178022-unsplash.jpg">
+                    <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/flaunter-com-178022-unsplash.jpg">
+                    <img class="new-merch__img" src="./imgs/iamwoman-mobile-assets/flaunter-com-178022-unsplash.jpg" alt="Flowers" style="width:auto;">
+                  </picture>
+                  <p class="new-merch__nav">
+                    <button class="new-merch__btn"><i class="fal fa-chevron-left"></i></button>
+                    <span class="new-merch__nav-slash"></span>
+                    <button class="new-merch__btn"><i class="fal fa-chevron-right"></i></button>
+                  </p>
+                </div>
+                <figcaption class="new-merch__title">
+                  <span class="new-merch__name">Шелковое платье с принтом</span>
+                  <span class="new-merch__price">4 800 рублей</span>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <p class="slider__merch-nav">
+          <button class="slider__btn slider__btn--prev js__prev">
+            <i class="fal fa-chevron-left"></i>
+          </button>
+          <button class="slider__btn slider__btn--next js__next">
+            <i class="fal fa-chevron-right"></i>
+          </button>
+        </p>        
+      </div>
+    <!-- </div> -->
+    <footer class="section__footer">
+      <a class="link link--underline_b" href="#">Смотреть все</a>
+    </footer>
+  </section>
+
+  <section class="site-wrapper__section section">
+    <header class="section__header">
+      <h2 class="section__title section__title--about">О бренде</h2>
+    </header>
+    <div class="about-content">
+      <div class="container">
+        <div class="about-content__container">
+          <div class="about-content__article about-content__article--first">
+            <p class="about-content__text">Концепция «свободной женщины» была придумана и создана основателем и дизайнером Кристиной Беккер на нальном этапе воплощения ее в реальность.</p>
+            <p class="about-content__text about-content__text--shift">Идея разработки свободных кроем моделей с яркими дизайнерскими акцентами составляет основу бренда, которая получила настоящий успех и имиджевую популярность</p>
+          </div>
+          <div class="about-content__article about-content__article--second">
+            <p class="about-content__text">Ключевыми моделями бренда I AM WOMEN стали рубашки и брюки с безупречной посадкой; а также платья, подчеркивающие женсвенные формы и жилеты, вписывающиеся в любой гардероб своременой женщины. Каждая модель сохраняет свою актуальность в течение нескольких сезонов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="site-wrapper__section site-wrapper__section--blog section">
+    <header class="section__header">
+      <h2 class="section__title section__title--blog">Блог</h2>
+    </header>
+      <div class="slider slider--blog js__slider-blog">
+        <div class="slider__frame slider__frame--blog js__frame">
+          <ul class="slider__slide-wrapper slider__slide-wrapper--blog js__slides">
+            <li class="slider__item slider__item--blog js__slide">
+              <article class="blog-post">
+                <span class="blog-post__tag">новости</span>
+                <picture>
+                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/shannon-ciricillo-711962-unsplash.jpg">
+                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/shannon-ciricillo-711962-unsplash.jpg">
+                  <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/shannon-ciricillo-711962-unsplash.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+                <h2 class="blog-post__title">Аксессуары осень <span>-</span> <span class="ws-nw">зима <span class="comma">,</span>18</span></h2>
+                <p class="blog-post__text">Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, ну а неправильно — испортят ваш лук</p>
+              </article>
+            </li>
+            <li class="slider__item slider__item--blog js__slide">
+              <article class="blog-post">
+                <span class="blog-post__tag">советы</span>
+                <picture>
+                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/stil-243522-unsplash.jpg">
+                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/stil-243522-unsplash.jpg">
+                  <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/stil-243522-unsplash.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+                <h2 class="blog-post__title">3 крутых образа для офиса</h2>
+                <p class="blog-post__text">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
+              </article>
+            </li>
+            <li class="slider__item slider__item--blog js__slide">
+              <article class="blog-post">
+                <span class="blog-post__tag">советы</span>
+                <picture>
+                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/vitaly-nikolenko-656064-unsplash.jpg">
+                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/vitaly-nikolenko-656064-unsplash.jpg">
+                  <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/vitaly-nikolenko-656064-unsplash.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+                <h2 class="blog-post__title">Лучший выбор: <span class="ws-nw">костюмы <span class="comma">,</span>18</span></h2>
+                <p class="blog-post__text">Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни</p>
+              </article>
+            </li>
+            <li class="slider__item slider__item--blog js__slide">
+              <article class="blog-post">
+                <span class="blog-post__tag">тенденции</span>
+                <picture>
+                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/alberto-bobbera-521685-unsplash.jpg">
+                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/alberto-bobbera-521685-unsplash.jpg">
+                  <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/alberto-bobbera-521685-unsplash.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+                <h2 class="blog-post__title">С чем носить ультрафиолет?</h2>
+                <p class="blog-post__text">Уже не первый сезон монохромные образы являются одной изглавных тенденций. Дизайнеры и стилисты призывают подбирать вещи в рамках одного сектора цветового круга</p>
+              </article>
+            </li>
+            <li class="slider__item slider__item--blog js__slide">
+              <article class="blog-post">
+                <span class="blog-post__tag">советы</span>
+                <picture>
+                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/stil-243522-unsplash.jpg">
+                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/stil-243522-unsplash.jpg">
+                  <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/stil-243522-unsplash.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+                <h2 class="blog-post__title">3 крутых образа для офиса</h2>
+                <p class="blog-post__text">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <footer class="section__footer section__footer--blog">
+      <a class="link link--color_r link--underline_r" href="#">Перейти в блог</a>
+    </footer>
+  </section>
+  <section class="site-wrapper__section site-wrapper__section--subscribe section">
+    <h2 class="visually-hidden">Подписка</h2>
+    <div class="container container--subscribe">
+      <div class="subscribe">
+        <div class="subscribe__container">
+          <p class="subscribe__text">Подпишись на новости <span class="brand">I am woman</span>
+            <br> и получите скидку 5% на следующую покупку</p>
+          <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="get">
+            <input class="subscribe__mail mail mail--center" type="email" placeholder="Ваш E-mail">
+            <input class="subscribe__submit submit" type="submit" value="Подписаться">
+            <p class="subscribe__rule">Подписываясь на новости, вы даёте согласие 
+              <br>на обработку персональных данных</p>          
+          </form>  
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="site-wrapper__footer site-footer">
+    <div class="container site-footer__container">
+      <div class="site-footer__navlist">
+        <nav class="navlist">
+          <div class="navlist__layout">
+            <ul class="navlist__column">
+              <li class="navlist__item"><h2 class="navlist__title">Каталог</h2></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Пальто</a></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Жилеты и жакеты</a></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Костюмы</a></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Трикотаж</a></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Платья</a></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Блузы и топы</a></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Футболки</a></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Юбки и брюки</a></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Аксессуары</a></li>
+            </ul>
+            <ul class="navlist__column">
+              <li class="navlist__item"><h2 class="navlist__title">О бренде</h2></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Оферта</a></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Оплата и доставка</a></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Возврат</a></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Контакты</a></li>
+            </ul>
+            <ul class="navlist__column">
+              <li class="navlist__item"><h2 class="navlist__title navlist__title--hidden">Предложения</h2></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Sale</a></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">New</a></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Looks</a></li>
+              <li class="navlist__item"><a class="navlist__link" href="#">Блог</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="site-footer__info">
+        <dl class="info">
+            <div class="info__call">
+              <p class="info__term">Звонок с сайта:</p>
+              <a class="info__phone link link--weight_b" href="tel:+74957929312">+7 495 792 93 12</a>
+            </div>
+            <div class="info__social">
+              <p class="info__term">Присоединяйся<span class="info__add"> к нам</span>:</p>
+              <ul class="social">
+                <li class="social__item social__item--footer">
+                  <a class="link" href="#">Facebook</a>
+                </li>
+                <li class="social__item social__item--footer">
+                  <a class="link" href="#">Youtube</a>
+                </li>
+                <li class="social__item social__item--footer">
+                  <a class="link" href="#">Vkontakte</a>
+                </li>
+              </ul>
+            </div>
+            <div class="info__discount">
+              <p class="info__term">Получи скидку 5%</p>
+              <input class="mail" type="email" placeholder="Ваш E-mail">
+            </div>
+            <div class="info__payment">
+              <p class="info__term">Принимаем к оплате:</p>
+              <div class="info__payment-list payment">
+                <ul class="payment__list payment-list">
+                  <li class="payment-list__item">
+                    <a href="#">
+                      <img src="./imgs/visa.png" alt="Visa">
+                    </a>
+                  </li>
+                  <li class="payment-list__item">
+                    <a href="#">
+                      <img src="./imgs/mastercard.png" alt="MasterCard">
+                    </a>
+                  </li>
+                  <li class="payment-list__item">
+                    <a href="#">
+                      <img src="./imgs/paypal.png" alt="PayPal">
+                    </a>
+                  </li>
+                </ul>
+                <p class="payment__rule">Вы можете оплатить наличными при
+                  <br>получении, либо выбрать другой <a class="link" href="#">способ оплаты</a></p>
+              </div>
+            </div>
+        </dl>
+        <section class="site-footer__copyright">
+          <p class="copyright"><span class="copyright__sign">&copy;</span> 2008-2018 <span class="brand">i am woman</span></p>
+        </section>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/lorySlider__script.js"></script>
+  <script src="./js/tinySlider__script.js"></script>
+  <script src="./js/navMenu.js"></script>
+</body>
+</html>

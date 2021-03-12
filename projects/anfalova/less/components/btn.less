@@ -1,0 +1,44 @@
+.btn-wrap {
+  width: 300px;
+  padding: 4px;
+  border-radius: 50px;
+  background-image: @gradient;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn {
+  width: 100%;
+  position: relative;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  background: none;
+  background-color: none;
+  
+  font-family: "Avenir Next Cyr Medium", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+
+  &:hover {
+    outline: none;
+    background-image: none;
+    background-color: #fff;
+    box-shadow: inset 0px 0px 10px rgba(35, 220, 184, 0.31);
+    color: rgb(14,181,149);
+  }
+  &:active {
+    box-shadow: inset 0px 0px 25px rgba(35, 220, 184, 1);
+  }
+  &:focus {
+    background-image: none;
+    background-color: #fff;
+    outline: none;
+    color: rgb(14,181,149);
+  }
+}

@@ -1,0 +1,30 @@
+.contact {
+  padding-bottom: 85px;
+  text-align: center;
+  @media (min-width: 1441px){
+    &__wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+  &__item {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #4e4d4e;
+    @media (min-width: 1441px){
+      font-size: 18px;
+    }
+
+    & span {
+      font-size: 18px;
+      color: #8eb574;
+      &::before, &::after {
+        content: '/';
+      }
+    }
+  }
+  &__social {
+    padding-top: 40px;
+  }
+}

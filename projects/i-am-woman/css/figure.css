@@ -1,0 +1,128 @@
+.new-merch {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.new-merch__product {
+  position: relative;
+  font-size: 0;
+}
+.new-merch__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+.new-merch__like {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  font-size: 20px;
+}
+@media (min-width: 1180px) {
+  .new-merch__like {
+    top: 17px;
+    right: 20px;
+    font-size: 26px;
+  }
+}
+.new-merch__nav {
+  position: absolute;
+  bottom: 3px;
+  left: 4px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 4px;
+  margin: 0;
+}
+@media (min-width: 1180px) {
+  .new-merch__nav {
+    bottom: 14px;
+    left: 25px;
+  }
+}
+.new-merch__nav-slash {
+  display: block;
+  width: 1px;
+  height: 20px;
+  background-color: rgba(52, 43, 43, 0.7);
+  margin: 0 10px;
+  font-size: 20px;
+}
+.new-merch__btn {
+  color: #342b2b;
+  border: none;
+  background: none;
+  font-size: 15px;
+}
+.new-merch__title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 13px;
+}
+@media (min-width: 764px) {
+  .new-merch__title {
+    margin-top: 5px;
+  }
+}
+@media (min-width: 1180px) {
+  .new-merch__title {
+    margin-top: 20px;
+  }
+}
+.new-merch__name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #342b2b;
+}
+@media (min-width: 764px) {
+  .new-merch__name {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1180px) {
+  .new-merch__name {
+    font-size: 30px;
+  }
+}
+.new-merch__price {
+  position: relative;
+  left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #342b2b;
+}
+@media (min-width: 764px) {
+  .new-merch__price {
+    left: 34px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1180px) {
+  .new-merch__price {
+    margin-top: 3px;
+    font-size: 20px;
+  }
+}
+.new-merch__price::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 12px);
+  width: 30px;
+  height: 1px;
+  background-color: #342b2b;
+}
+@media (min-width: 764px) {
+  .new-merch__price::before {
+    width: 49px;
+  }
+}

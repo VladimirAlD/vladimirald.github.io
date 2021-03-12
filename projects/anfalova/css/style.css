@@ -1,0 +1,669 @@
+@font-face {
+  font-family: 'Avenir Next Cyr Regular';
+  src: url('../fonts/AvenirNextCyr-Regular.eot');
+  src: url('../fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/AvenirNextCyr-Regular.woff') format('woff'), url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Cyr Medium';
+  src: url('../fonts/AvenirNextCyr-Medium.eot');
+  src: url('../fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/AvenirNextCyr-Medium.woff') format('woff'), url('../fonts/AvenirNextCyr-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bebas Neue Bold';
+  src: url('../fonts/BebasNeueBold.eot');
+  src: url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeueBold.woff') format('woff'), url('../fonts/BebasNeueBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url('../fonts/MyriadPro-Regular.eot');
+  src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 100%;
+}
+.site-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  color: #212f3d;
+  font-family: "Avenir Next Cyr Medium", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+.site-main {
+  flex: 1 0 auto;
+  padding-bottom: 30px;
+  background-image: url(../../imgs/foot-bg.jpg);
+  background-size: contain;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+}
+.site-main__section {
+  margin-bottom: 50px;
+}
+.site-footer {
+  margin-top: auto;
+  flex-shrink: 0;
+  background-color: #132230;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+::-moz-selection {
+  background-color: #48d7bb;
+  color: #fff;
+}
+::selection {
+  background-color: #48d7bb;
+  color: #fff;
+}
+.container {
+  min-width: 320px;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+.site-header {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  color: #fff;
+  background-image: url(../imgs/head-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+@media (min-width: 768px) {
+  .site-header {
+    background-position: 60% 0;
+  }
+}
+@media (min-width: 1024px) {
+  .site-header {
+    background-position: center bottom;
+  }
+}
+.site-header__main-nav {
+  margin-bottom: 150px;
+}
+@media (min-width: 768px) {
+  .site-header__main-nav {
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .site-header__main-nav {
+    margin-bottom: 200px;
+  }
+}
+.site-header__headline {
+  margin-bottom: 100px;
+}
+@media (min-width: 768px) {
+  .site-header__headline {
+    margin-bottom: 50px;
+  }
+}
+.site-header__btn {
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .site-header__btn {
+    margin-left: 0;
+  }
+}
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Avenir Next Cyr Medium", sans-serif;
+  font-weight: normal;
+}
+.logo__text {
+  position: relative;
+  font-size: 1.5rem;
+}
+.logo__desc {
+  font-size: 1rem;
+}
+.social-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.social-list--header {
+  justify-content: space-between;
+}
+.social-list--footer {
+  justify-content: space-around;
+}
+@media (min-width: 1024px) {
+  .social-list--footer {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-list__item {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.social-list__item--tel {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .social-list__item--tel {
+    width: auto;
+  }
+}
+.social-list__item--footer a::before {
+  content: '';
+  position: absolute;
+  top: 49%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: all 0.25s ease-in-out;
+}
+@media (min-width: 768px) {
+  .social-list__item--footer a::before {
+    width: 75px;
+    height: 75px;
+  }
+}
+.social-list__item--header:hover svg {
+  fill: #48d7bb;
+}
+.social-list__item--footer a:hover::before {
+  box-shadow: inset 0 0 10px #ffffff;
+}
+.social-list__item svg {
+  fill: #fff;
+  width: 25px;
+  height: 25px;
+}
+.social-list__tel {
+  display: none;
+}
+@media (min-width: 768px) {
+  .social-list__tel {
+    display: block;
+    font-family: "Avenir Next Cyr Medium", sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: #fff;
+    word-wrap: none;
+  }
+}
+.main-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.main-nav__logo {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .main-nav__logo {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .main-nav__logo {
+    width: calc(5 / 12 * 100%);
+  }
+}
+.main-nav__social-list {
+  margin-left: auto;
+  width: 70%;
+}
+@media (min-width: 768px) {
+  .main-nav__social-list {
+    width: 30%;
+  }
+}
+.headline {
+  text-align: right;
+}
+@media (min-width: 768px) {
+  .headline {
+    text-align: left;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .headline {
+    width: 45%;
+  }
+}
+.headline__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 3rem;
+  line-height: 4rem;
+  letter-spacing: 0.075em;
+  font-weight: normal;
+}
+@media (min-width: 1024px) {
+  .headline__title {
+    font-size: 4.5rem;
+    line-height: 6rem;
+  }
+}
+.headline span {
+  display: inline-block;
+  font-family: "Avenir Next Cyr Medium", sans-serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+.btn-wrap {
+  width: 300px;
+  padding: 4px;
+  border-radius: 50px;
+  background-image: linear-gradient(-29deg, #48d7bb 0%, #0eb595 100%);
+}
+.btn-wrap:focus {
+  outline: none;
+}
+.btn {
+  width: 100%;
+  position: relative;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  background: none;
+  background-color: none;
+  font-family: "Avenir Next Cyr Medium", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+.btn:hover {
+  outline: none;
+  background-image: none;
+  background-color: #fff;
+  box-shadow: inset 0px 0px 10px rgba(35, 220, 184, 0.31);
+  color: #0eb595;
+}
+.btn:active {
+  box-shadow: inset 0px 0px 25px #23dcb8;
+}
+.btn:focus {
+  background-image: none;
+  background-color: #fff;
+  outline: none;
+  color: #0eb595;
+}
+.section {
+  position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .section {
+    padding-top: 6rem;
+  }
+}
+.section__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+@media (min-width: 1024px) {
+  .section__title {
+    margin-bottom: 5rem;
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section__title--about {
+    width: 50%;
+    margin-left: auto;
+    text-align: left;
+  }
+  .section__title--order {
+    margin-bottom: 3rem;
+  }
+}
+.feature-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.feature-list__item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .feature-list__item {
+    width: 33.33333%;
+  }
+  .feature-list__item--last {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .feature-list__item {
+    width: 25%;
+    margin-bottom: 5rem;
+  }
+  @last {
+    width: auto;
+  }
+}
+.feature-list__img {
+  width: 80px;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 1024px) {
+  .feature-list__img {
+    margin-bottom: 3rem;
+  }
+}
+.feature-list span {
+  font-size: 0.875rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .feature-list span {
+    font-size: 1.25rem;
+  }
+}
+.about {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .about::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: 0;
+    bottom: -20px;
+    left: 0;
+    background-color: #f8fbfa;
+    z-index: -1;
+  }
+}
+@media (min-width: 1024px) {
+  .about::after {
+    top: -260px;
+    bottom: -100px;
+  }
+}
+.about__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+  z-index: -1;
+  opacity: 0.25;
+}
+@media (min-width: 768px) {
+  .about__img {
+    z-index: 0;
+    opacity: 1;
+    width: 50%;
+    top: auto;
+    left: -40px;
+    bottom: -20px;
+    transform: none;
+  }
+}
+@media (min-width: 1024px) {
+  .about__img {
+    width: 60%;
+    left: -120px;
+    bottom: -100px;
+  }
+}
+.about__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+.about__text {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir Next Cyr Medium", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+@media (min-width: 768px) {
+  .about__text {
+    width: 50%;
+    margin-left: auto;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+}
+.about__btn {
+  display: none;
+}
+@media (min-width: 768px) {
+  .about__btn {
+    display: block;
+    margin-left: 50%;
+  }
+}
+.order__text {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  font-family: "Avenir Next Cyr Medium", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: normal;
+  text-align: center;
+}
+.order__order-form {
+  margin-bottom: 1.5rem;
+}
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+.order-form__field {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+@media (min-width: 768px) {
+  .order-form__field {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+}
+.order-form__field input[type="text"],
+.order-form__field input[type="tel"] {
+  padding: 0.75rem;
+  margin-bottom: 0.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  width: 100%;
+  font-family: "Avenir Next Cyr Regular", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #6e837f;
+  background-color: #eff4f3;
+}
+@media (min-width: 768px) {
+  .order-form__field input[type="text"],
+  .order-form__field input[type="tel"] {
+    margin: 0 15px;
+    max-width: 360px;
+  }
+}
+.order-form__policy {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1.5rem;
+  font-family: "Avenir Next Cyr Regular", sans-serif;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #6e837f;
+}
+@media (min-width: 768px) {
+  .order-form__policy {
+    text-align: center;
+  }
+}
+.order-form__btn {
+  margin: 0 auto;
+}
+.site-footer {
+  position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: #fff;
+  background-image: url(../../imgs/people.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .site-footer {
+    padding-top: 2rem;
+  }
+}
+.site-footer__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+@media (min-width: 1024px) {
+  .site-footer__title {
+    margin-bottom: 5rem;
+  }
+}
+.site-footer__social {
+  margin-bottom: 12rem;
+}
+@media (min-width: 1024px) {
+  .site-footer__social {
+    margin-bottom: 20vw;
+  }
+}
+.legacy {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: right;
+  font-family: "Avenir Next Cyr Regular", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.3);
+}
+@media (min-width: 1024px) {
+  .legacy {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.legacy__text {
+  padding: 0;
+  margin: 0;
+}
+.link {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+.link:hover {
+  color: #ffffff;
+  border: none;
+}

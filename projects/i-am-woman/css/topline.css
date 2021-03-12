@@ -1,0 +1,44 @@
+.site-header {
+  position: relative;
+  width: 100%;
+}
+.site-header__container {
+  position: absolute;
+  top: 9px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 320px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 764px) {
+  .site-header__container {
+    padding-left: 9px;
+    padding-right: 60px;
+    top: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .site-header__container {
+    padding-left: 20px;
+    padding-right: 220px;
+  }
+}
+.site-header__icons {
+  position: relative;
+  top: 3px;
+  width: 105px;
+}
+@media (min-width: 764px) {
+  .site-header__icons {
+    width: 221px;
+  }
+}
+@media (min-width: 1180px) {
+  .site-header__icons {
+    width: 291px;
+  }
+}
