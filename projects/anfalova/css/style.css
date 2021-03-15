@@ -49,7 +49,7 @@ body {
 .site-main {
   flex: 1 0 auto;
   padding-bottom: 30px;
-  background-image: url(../../imgs/foot-bg.jpg);
+  background-image: url(../imgs/foot-bg.jpg);
   background-size: contain;
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -601,7 +601,7 @@ img {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   color: #fff;
-  background-image: url(../../imgs/people.jpg);
+  background-image: url(../imgs/people.jpg);
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
