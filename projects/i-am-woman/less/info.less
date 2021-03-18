@@ -1,21 +1,45 @@
 .info {
   display: block;
-  
-  &__call, &__social, &__discount, &__payment {
+
+  &__item {
+    display: flex;
     width: 100%;
-    padding-right: 26px;
-    column-count: 2;
-    column-fill: auto;
-    column-gap: normal;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     @media (min-width: 764px) {
-      column-gap: 10px;
+      padding: 0;
+      margin-bottom: 12px;
     }
     @media (min-width: 1180px) {
       margin-bottom: 22px;
     }
+    &--tablet {
+      display: none;
+      @media (min-width: 764px) {
+        display: flex;
+      }
+    }
+    &--desktop {
+      display: none;
+      @media (min-width: 1180px) {
+        display: flex;
+      }
+    }
   }
-
+  
+  &__term {
+    width: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #342b2b;
+    @media(min-width: 764px) {
+      width: 28%;
+    }
+    @media(min-width: 1180px) {
+      width: 43%;
+      font-size: 18px;
+    }
+  }
+  
   &__add {
     display: none;
     @media(min-width: 764px) {
@@ -26,39 +50,11 @@
   &__phone {
     position: relative;
     bottom: 3px;
-  }
-  
-  &__term {
     font-size: 16px;
     font-weight: 600;
     color: #342b2b;
     @media(min-width: 1180px) {
       font-size: 18px;
-      column-width: 40%;
-    }
-  }
-  
-  &__phone {
-    font-size: 16px;
-    font-weight: 600;
-    color: #342b2b;
-    @media(min-width: 1180px) {
-      font-size: 18px;
-    }
-  }
-
-  &__discount {
-    display: none;
-    @media (min-width: 1180px) {
-      display: block;
-    }
-  }
-
-  &__payment {
-    display: none;
-
-    @media (min-width: 764px) {
-      display: block;
     }
   }
 }
