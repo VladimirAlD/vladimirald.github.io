@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
   // init the slider
   let lorySlider = lory(sliderIntro, {
     slidesToScroll: 1,
+    // infinite: 1,
     rewind: true,
     enableMouseEvents: false,
     slideSpeed: 500,
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   let lorySliderTwo = lory(sliderBlog, {
     slidesToScroll: 1,
+    // infinite: 1,
     rewind: true,
     enableMouseEvents: true,
     slideSpeed: 500,
@@ -39,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   let lorySliderThree = lory(sliderMerch, {
     slidesToScroll: 1,
+    // infinite: 1,
     rewind: true,
     enableMouseEvents: true,
     slideSpeed: 500,

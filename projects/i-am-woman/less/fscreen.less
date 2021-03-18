@@ -3,21 +3,23 @@
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 100vh;
-  // background-color: #f0eae7;
+  min-height: 490px;
+  background-color: #f0eae7;
   background-image: linear-gradient(var(--gray8), var(--gray8)), var(--product);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 
   @media(min-width: 764px) {
+    min-height: 823px;
     background-image: linear-gradient(to right, var(--gray) 0, var(--gray) 50px, #fff 50px, #fff 60%, var(--gray8) 60%, var(--gray8)), var(--product);
     background-repeat: no-repeat;
     background-position: 0 0, right top;
     background-size: auto 120%;
   }
 
-  @media(min-width: 1440px) {
+  @media(min-width: 1180px) {
+    min-height: 840px;
     background-image: linear-gradient(to right, var(--gray) 0, var(--gray) 75px,
      #fff 75px, #fff 50%, 
      var(--gray8) 50%, var(--gray8)), 
@@ -44,19 +46,20 @@
       flex-direction: column;
       justify-content: space-between;
       width: 100%;
-      height: 100vh;
-      padding-left: 82px;
+      min-height: 823px;
+      padding-left: 60px;
       padding-top: 28px;
       padding-bottom: 28px;
     }
-    @media(min-width: 1440px) {
+    @media(min-width: 1180px) {
+      min-height: 840px; // надо переменную
       margin-left: -37px;
       padding-left: 0;
       padding-bottom: 80px;
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1180px) {
     &__bg-numb {
       position: relative;
       display: inline-block;
@@ -78,9 +81,9 @@
     visibility: hidden;
     @media(min-width: 764px) {
       visibility: visible;
-      margin-left: 42px;
+      margin-left: 36px;
     }
-    @media(min-width: 1440px) {
+    @media(min-width: 1180px) {
       margin-left: 110px;
     }
   }
@@ -138,15 +141,21 @@
     @media(min-width: 764px) {
       visibility: visible;
     }
-    @media(min-width: 1440px) {
+    @media(min-width: 1180px) {
       margin-left: 45px;
     }
   }
   
   &__banner {
     position: relative;
-    top: -6px;
+    top: -5px;
     z-index: 10;
+    @media (min-width: 764px) {
+      top: 34px;
+    }
+    @media (min-width: 1180px) {
+      top: auto;
+    }
   }
 
   &__title {
@@ -160,11 +169,11 @@
     word-spacing: 100vw; // wrap every word
     
     @media (min-width: 764px) {
-      margin-bottom: 30px;    
+      margin-bottom: 36px;    
       font-size: 36px;
       word-spacing: normal;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1180px) {
       font-size: 48px;
     }
   }
@@ -172,7 +181,11 @@
   &__slider {
     position: absolute;
     z-index: 1;
+    // left: 0;
+    right: 0;
     top: calc(-50% - 5px);
+    // right: 0;
+
     // top: calc(50%);
     right: 15px;
     // transform: translate(0, 50%);

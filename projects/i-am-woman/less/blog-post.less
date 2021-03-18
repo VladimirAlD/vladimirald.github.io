@@ -1,15 +1,25 @@
 .blog-post {
   font-family: 'Cormorant', serif;
-  display: inline-block;
-  max-width: 400px;
-  font-size: 0;
-  vertical-align: top;
-  white-space: normal;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  // font-size: 0;
+  // vertical-align: top;
+  white-space: normal; // fixing PREREQUISITED CSS STYLES FOR LORY.JS
+  padding: 0 23px;
+  @media (min-width: 764px) {
+    padding: 0;
+    max-width: 345px;
+  }
+  @media (min-width: 1180px) {
+    max-width: 401px;
+  }
 
   &__tag {
     position: relative;
     display: block;
+    align-self: start;
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: 300;
@@ -25,12 +35,9 @@
     display: block;
     max-width: 100%;
     height: auto;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     pointer-events: none;
 
-    @media(min-width: 764px) {
-      margin-bottom: 4px;
-    }
     @media(min-width: 1180px) {
       margin-bottom: 10px;
     }

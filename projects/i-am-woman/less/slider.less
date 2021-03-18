@@ -13,6 +13,7 @@
     display: block; // block if percentage
     text-align: center;
     @media(min-width: 764px) {
+      width: 100%; // something goes wrong without it
       display: inline-block;
     }
   }
@@ -28,34 +29,38 @@
 .slider {
   &--intro {
     position: relative;
-    width: 68.75vmin;
+    // width: 68.75vmin;
+    width: 100%;
+    max-width: 219px;
     @media(min-width: 764px) {
-      width: 393px;
+      max-width: 393px;
     }
     @media(min-width: 1180px) {
-      width: 605px;
+      max-width: 605px;
     }
   }
   &--merch {
-    --width: calc(100vw - 15px * 2);
-    width: var(--width);
+    // --width: calc(100vw - 15px * 2);
+    // width: var(--width);
+    width: 100%;
     margin: 0 auto;
     margin-top: 15px;
     @media(min-width: 764px) {
-      --width: calc(100vw - 20px * 2);
+      // --width: calc(100vw - 20px * 2);
       margin-top: 40px;
     }
     @media(min-width: 1180px) {
-      --width: calc(1180px - 37px * 2);
+      // --width: calc(1180px - 37px * 2);
       margin-top: 60px;
     }
   }
   &--blog {
-    --width: calc(100vw - 15px * 2);   
-    width: var(--width);
+    // --width: calc(100vw - 15px * 2);   
+    // width: var(--width);
+    width: 100%;
     margin: 0 auto;
     @media(min-width: 764px) {
-      --width: calc(100vw - 27px * 2);
+      // --width: calc(100vw - 27px * 2);
     }
     // @media(min-width: 1180px) {
     //   --width: calc(1180px - 37px * 2);
@@ -68,18 +73,20 @@
       margin: 0 auto;
     }
     &--merch {
-      width: calc(var(--width) - 24px * 2);
-      margin: 0 auto;
-      @media(min-width: 764px) {
-        width: var(--width);
-      }
+      // width: calc(var(--width) - 24px * 2);
+      width: 100%;
+      // margin: 0 auto;
+      // @media(min-width: 764px) {
+      //   width: var(--width);
+      // }
     }
     &--blog {
-      width: calc(var(--width) - 24px * 2);
-      margin: 0 auto;
-      @media(min-width: 764px) {
-        width: var(--width);
-      }
+      // width: calc(var(--width) - 24px * 2);
+      width: 100%;
+      // margin: 0 auto;
+      // @media(min-width: 764px) {
+      //   width: var(--width);
+      // }
     }
   }
 
@@ -90,7 +97,8 @@
     &--merch {
       width: 100%;
       @media(min-width: 764px) {
-        width: calc((var(--width) - 40px) / 3);
+        width: auto;
+        max-width: calc(100% / 3);
         margin-right: 20px; // none if percentage      
         &:last-child {
           margin-right: 0;
@@ -104,7 +112,8 @@
     &--blog {
       width: 100%;
       @media(min-width: 764px) {
-        width: calc((var(--width) - 20px) / 2);
+        width: auto;
+        // max-width: calc(100% / 2);
         margin-right: 20px; // none if percentage      
         &:last-child {
           margin-right: 0;
@@ -121,7 +130,7 @@
 
     @media(min-width: 764px) {
       position: relative;
-      top: -5px;
+      bottom: 6px;
       display: flex;
       align-items: center;
       justify-content: center;

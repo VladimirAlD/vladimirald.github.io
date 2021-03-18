@@ -7,11 +7,13 @@
     padding-top: 35px;
     padding-bottom: 30px;
   }
-  @media(min-width: 1180px) {
-    padding-top: 60px;
+  @media(min-width: 1180px) and (max-width: 1440px) {
     background-image: linear-gradient(to right, #decec5 0%, #decec5 54%, #ece5e1 54%, #ece5e1 100%);
   }
-
+  @media (min-width: 1180px) {
+    padding-top: 60px;
+  }
+  
   &__container {
     position: relative;
     display: flex;
@@ -47,7 +49,16 @@
   &__copyright {
     position: relative;
     top: 8px;
-    margin-top: 35px;
+    // margin-top: 35px;
+    margin-top: 13px;
     align-self: flex-end;
+    @media (min-width: 764px) {
+      margin-top: 36px;
+    }
+    @media (min-width: 1180px) {
+      top: auto;
+      margin-top: auto;
+      margin-bottom: 16px;
+    }
   }
 }

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SwedishBitter</title>
   <!-- Pixel Glass -->
-  <style>
+  <!-- <style>
     HTML {
       background-repeat: no-repeat;
       background-position:  50% 0;
@@ -29,7 +29,7 @@
     }
   </style>
   <link rel="stylesheet" href="./pp/styles.css">
-  <script src="./pp/script.js"></script>
+  <script src="./pp/script.js"></script> -->
   <!-- // Pixel Glass -->
   <link rel="stylesheet" href="./css/tiny-slider.css">
   <link rel="stylesheet" href="./fonts/FontAwesomePro/css/all.min.css">
@@ -147,10 +147,8 @@
         </ul>
       </div>
       <div class="site-intro__slider">
-
         <div class="slider slider--intro js__slider-intro">
           <div class="slider__frame slider__frame--intro js__frame">
-
             <ul class="slider__slide-wrapper slider__slide-wrapper--intro js__slides">
               <li class="slider__item slider__item--intro js__slide" data-index-number="01">
                 <figure class="product" >
@@ -191,8 +189,7 @@
                   </picture>
                 </figure>
               </li>
-            </ul>
-          
+            </ul>          
             <div class="slider__intro-nav">
               <p class="intro-nav">
                 <button class="slider__btn slider__btn--padding js__prev">
@@ -206,16 +203,12 @@
                 </button>
               </p>
               <a class="slider__link link" href="#">Смотреть все</a>
-            </div>
-            
+            </div>            
           </div>  
         </div>
-
       </div>
-
     </div>
   </section>
-
   <!-- Новые поступления -->
   <section class="site-wrapper__section section">
     <header class="section__header">
@@ -226,7 +219,7 @@
         <button class="section__btn btn">Брюки и юбки</button>
       </p>
     </header>
-    <!-- <div class="container my-slider"> -->
+    <div class="container">
       <div class="slider slider--merch js__slider-merch">
         <div class="slider__frame slider__frame--merch js__frame">
           <ul class="slider__slide-wrapper slider__slide-wrapper--merch js__slides">
@@ -294,7 +287,7 @@
                   </p>
                 </div>
                 <figcaption class="new-merch__title">
-                  <span class="new-merch__name">Шелковое платье с принтом</span>
+                  <span class="new-merch__name">Шелковое платье<span class="new-merch__name--visable-desk"> с принтом</span></span>
                   <span class="new-merch__price">4 800 рублей</span>
                 </figcaption>
               </figure>
@@ -310,12 +303,11 @@
           </button>
         </p>        
       </div>
-    <!-- </div> -->
+    </div>
     <footer class="section__footer">
       <a class="link link--underline_b" href="#">Смотреть все</a>
     </footer>
   </section>
-
   <section class="site-wrapper__section section">
     <header class="section__header">
       <h2 class="section__title section__title--about">О бренде</h2>
@@ -334,11 +326,11 @@
       </div>
     </div>
   </section>
-
   <section class="site-wrapper__section site-wrapper__section--blog section">
     <header class="section__header">
       <h2 class="section__title section__title--blog">Блог</h2>
     </header>
+    <div class="container container--desktop">
       <div class="slider slider--blog js__slider-blog">
         <div class="slider__frame slider__frame--blog js__frame">
           <ul class="slider__slide-wrapper slider__slide-wrapper--blog js__slides">
@@ -350,7 +342,7 @@
                   <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/shannon-ciricillo-711962-unsplash.jpg">
                   <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/shannon-ciricillo-711962-unsplash.jpg" alt="Flowers" style="width:auto;">
                 </picture>
-                <h2 class="blog-post__title">Аксессуары осень <span>-</span> <span class="ws-nw">зима <span class="comma">,</span>18</span></h2>
+                <h2 class="blog-post__title">Аксессуары осень — зима <span class="comma">,</span>18</h2>
                 <p class="blog-post__text">Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, ну а неправильно — испортят ваш лук</p>
               </article>
             </li>
@@ -405,13 +397,14 @@
           </ul>
         </div>
       </div>
+    </div>
     <footer class="section__footer section__footer--blog">
       <a class="link link--color_r link--underline_r" href="#">Перейти в блог</a>
     </footer>
   </section>
   <section class="site-wrapper__section site-wrapper__section--subscribe section">
     <h2 class="visually-hidden">Подписка</h2>
-    <div class="container container--subscribe">
+    <div class="container container--wide">
       <div class="subscribe">
         <div class="subscribe__container">
           <p class="subscribe__text">Подпишись на новости <span class="brand">I am woman</span>
@@ -461,54 +454,60 @@
         </nav>
       </div>
       <div class="site-footer__info">
-        <dl class="info">
-            <div class="info__call">
+        <div class="info">
+            <div class="info__item">
               <p class="info__term">Звонок с сайта:</p>
-              <a class="info__phone link link--weight_b" href="tel:+74957929312">+7 495 792 93 12</a>
+              <div class="info__def">
+                <a class="info__phone link link--weight_b" href="tel:+74957929312">+7 495 792 93 12</a>
+              </div>
             </div>
-            <div class="info__social">
+            <div class="info__item">
               <p class="info__term">Присоединяйся<span class="info__add"> к нам</span>:</p>
-              <ul class="social">
-                <li class="social__item social__item--footer">
-                  <a class="link" href="#">Facebook</a>
-                </li>
-                <li class="social__item social__item--footer">
-                  <a class="link" href="#">Youtube</a>
-                </li>
-                <li class="social__item social__item--footer">
-                  <a class="link" href="#">Vkontakte</a>
-                </li>
-              </ul>
+              <div class="info__def">
+                <ul class="social social--footer">
+                  <li class="social__item social__item--footer">
+                    <a class="link" href="#">Facebook</a>
+                  </li>
+                  <li class="social__item social__item--footer">
+                    <a class="link" href="#">Youtube</a>
+                  </li>
+                  <li class="social__item social__item--footer">
+                    <a class="link" href="#">Vkontakte</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="info__discount">
+            <div class="info__item info__item--desktop">
               <p class="info__term">Получи скидку 5%</p>
-              <input class="mail" type="email" placeholder="Ваш E-mail">
+              <div class="info__def">
+                <input class="mail" type="email" placeholder="Ваш E-mail">
+              </div>
             </div>
-            <div class="info__payment">
+            <div class="info__item info__item--tablet">
               <p class="info__term">Принимаем к оплате:</p>
-              <div class="info__payment-list payment">
-                <ul class="payment__list payment-list">
+              <div class="info__def">
+                <ul class="payment-list">
                   <li class="payment-list__item">
-                    <a href="#">
-                      <img src="./imgs/visa.png" alt="Visa">
+                    <a href="#" class="payment-list__link">
+                      <img src="./imgs/visa.png" alt="Visa" class="payment-list__img">
                     </a>
                   </li>
                   <li class="payment-list__item">
-                    <a href="#">
-                      <img src="./imgs/mastercard.png" alt="MasterCard">
+                    <a href="#" class="payment-list__link">
+                      <img src="./imgs/mastercard.png" alt="MasterCard" class="payment-list__img">
                     </a>
                   </li>
                   <li class="payment-list__item">
-                    <a href="#">
-                      <img src="./imgs/paypal.png" alt="PayPal">
+                    <a href="#" class="payment-list__link">
+                      <img src="./imgs/paypal.png" alt="PayPal" class="payment-list__img">
                     </a>
                   </li>
                 </ul>
-                <p class="payment__rule">Вы можете оплатить наличными при
-                  <br>получении, либо выбрать другой <a class="link" href="#">способ оплаты</a></p>
+                <p class="payment-rule">Вы можете оплатить наличными при
+                  <br>получении, либо выбрать другой <a class="link link--underline_b payment-rule__link" href="#">способ оплаты</a></p>
               </div>
             </div>
-        </dl>
+        </div>
         <section class="site-footer__copyright">
           <p class="copyright"><span class="copyright__sign">&copy;</span> 2008-2018 <span class="brand">i am woman</span></p>
         </section>
@@ -516,8 +515,8 @@
     </div>
   </footer>
 
-  <script src="./js/lorySlider__script.js"></script>
-  <script src="./js/tinySlider__script.js"></script>
-  <script src="./js/navMenu.js"></script>
+  <!-- <script src="./js/lorySlider__script.js"></script> -->
+  <!-- <script src="./js/tinySlider__script.js"></script> -->
+  <!-- <script src="./js/navMenu.js"></script> -->
 </body>
 </html>

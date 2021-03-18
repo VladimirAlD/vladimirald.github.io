@@ -15,38 +15,40 @@
     display: none;
   }
   
-  @media (min-width: 764px) {
-    &__name {
-      white-space: nowrap;
-    }
-    
+  @media (min-width: 764px) {    
     &__title {
       position: absolute;
       bottom: 50px;
-      left: 50%;
-      transform: translate(-50%, 0);
-  
+      right: 0;
+      
       z-index: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 20px 40px 25px;
-  
+      
       font-size: 24px;
       font-weight: 600;
       color: #91161d;
-  
+      
       background-color: rgba(236,229,235,.8);
-
-      @media(min-width: 764px) {
-        bottom: 85px;
+      
+      @media(min-width: 1180px) {
+        bottom: 82px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
-  
+    
+    &__name {
+      white-space: nowrap;
+    }
+
     &__price {
       position: relative;
-      top: 5px;
+      top: 6px;
       align-self: flex-end;
       font-size: 18px;
   

@@ -102,6 +102,11 @@ img {
   margin-left: 20px;
   z-index: 10;
 }
+@media screen and (max-width: 768px) {
+  .scroll-nav {
+    display: none;
+  }
+}
 .scroll-nav__item {
   display: block;
   position: relative;
