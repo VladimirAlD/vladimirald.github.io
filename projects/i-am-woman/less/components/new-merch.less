@@ -2,11 +2,17 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100%;
-  white-space: normal;
-  
+  max-width: 244px;
+  margin: 0 auto;
+  @media (min-width: 764px){
+    max-width: 228px;
+  }
+  @media (min-width: 1180px){
+    max-width: 349px;
+  }
+
   &__product {
     position: relative;
     // font-size: 0;

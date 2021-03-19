@@ -1,0 +1,89 @@
+.product {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 219px;
+  margin-left: auto;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+  
+  @media (min-width: 764px){
+    max-width: 393px;
+  }
+  @media (min-width: 1180px){
+    max-width: 605px;
+  }
+  
+  &__img {
+    pointer-events: none;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    pointer-events: none;
+    margin: 0 auto;
+  }
+  
+  &__title {
+    display: none;
+    
+    @media (min-width: 764px) {    
+      position: absolute;
+      bottom: 50px;
+      right: 0;
+      
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 40px 25px;
+      
+      font-size: 24px;
+      font-weight: 600;
+      color: #91161d;
+      
+      background-color: rgba(236,229,235,.8);
+      
+    }
+    
+    @media(min-width: 1180px) {
+      bottom: 82px;
+      right: auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+   
+  &__name {
+    white-space: nowrap;
+  }
+
+  &__price {
+    position: relative;
+    top: 6px;
+    align-self: flex-end;
+    font-size: 18px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: calc(100% + 15px);
+      transform: translate(0, calc(-50% + 2px));
+
+      display: block;
+      width: 72px;
+      height: 2px;
+
+      background-color: #91161d;
+    }
+  }
+}
