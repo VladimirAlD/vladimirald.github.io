@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SwedishBitter</title>
   <!-- Pixel Glass -->
-  <!-- <style>
+  <style>
     HTML {
       background-repeat: no-repeat;
       background-position:  50% 0;
@@ -29,14 +29,12 @@
     }
   </style>
   <link rel="stylesheet" href="./pp/styles.css">
-  <script src="./pp/script.js"></script> -->
+  <script src="./pp/script.js"></script>
   <!-- // Pixel Glass -->
-  <link rel="stylesheet" href="./css/tiny-slider.css">
+  <link rel="stylesheet" href="./js/tiny-slider/tiny-slider.css">
   <link rel="stylesheet" href="./fonts/FontAwesomePro/css/all.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/lory.min.js"></script>
-  <script src="./js/tiny-slider.js"></script>
-  <script src="./js/TweenMax.min.js"></script>
+  <script src="./js/tiny-slider/min/tiny-slider.js"></script>
 </head>
 <body class="site-wrapper">
   <header class="site-header">
@@ -147,64 +145,62 @@
         </ul>
       </div>
       <div class="site-intro__slider">
-        <div class="slider slider--intro js__slider-intro">
-          <div class="slider__frame slider__frame--intro js__frame">
-            <ul class="slider__slide-wrapper slider__slide-wrapper--intro js__slides">
-              <li class="slider__item slider__item--intro js__slide" data-index-number="01">
-                <figure class="product" >
-                  <figcaption class="product__title">
-                    <span class="product__name">Хлопковое платье в полоску</span>
-                    <span class="product__price">9 900 рублей</span>
-                  </figcaption>
-                  <picture>
-                    <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/icons8-team-355985-unsplash.jpg">
-                    <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/icons8-team-355985-unsplash.jpg">
-                    <img class="product__img" src="./imgs/iamwoman-mobile-assets/icons8-team-355985-unsplash.jpg" alt="Flowers" style="width:auto;">
-                  </picture>
-                </figure>
-              </li>
-              <li class="slider__item slider__item--intro js__slide" data-index-number="02">
-                <figure class="product" >
-                  <figcaption class="product__title">
-                    <span class="product__name">Спортивный желтый костюм</span>
-                    <span class="product__price">9 900 рублей</span>
-                  </figcaption>
-                  <picture>
-                    <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/dom-hill-512919-unsplash.jpg">
-                    <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/dom-hill-512919-unsplash.jpg">
-                    <img class="product__img" src="./imgs/iamwoman-mobile-assets/dom-hill-512919-unsplash.jpg" alt="Flowers" style="width:auto;">
-                  </picture>
-                </figure>
-              </li>
-              <li class="slider__item slider__item--intro js__slide" data-index-number="03">
-                <figure class="product" >
-                  <figcaption class="product__title">
-                    <span class="product__name">Платье – халат со стразами</span>
-                    <span class="product__price">9 900 рублей</span>
-                  </figcaption>
-                  <picture>
-                    <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/raechel-romero-309859-unsplash.jpg">
-                    <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/raechel-romero-309859-unsplash.jpg">
-                    <img class="product__img" src="./imgs/iamwoman-mobile-assets/raechel-romero-309859-unsplash.jpg" alt="Flowers" style="width:auto;">
-                  </picture>
-                </figure>
-              </li>
-            </ul>          
-            <div class="slider__intro-nav">
-              <p class="intro-nav">
-                <button class="slider__btn slider__btn--padding js__prev">
-                  <i class="fal fa-chevron-left"></i>
-                </button>
-                <span class="intro-nav__count js__countProd">01</span>
-                <span class="intro-nav__slash">/</span>
-                <span class="intro-nav__count intro-nav__count--total">3</span>
-                <button class="slider__btn slider__btn--padding js__next">
-                  <i class="fal fa-chevron-right"></i>
-                </button>
-              </p>
-              <a class="slider__link link" href="#">Смотреть все</a>
-            </div>            
-          </div>  
+        <div class="slider-intro">
+          <ul class="slider-intro__wrapper js__sliderIntro">
+            <li class="slider-intro__item" data-index-number="01">
+              <figure class="product" >
+                <figcaption class="product__title">
+                  <span class="product__name">Хлопковое платье в полоску</span>
+                  <span class="product__price">9 900 рублей</span>
+                </figcaption>
+                <picture>
+                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/icons8-team-355985-unsplash.jpg">
+                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/icons8-team-355985-unsplash.jpg">
+                  <img class="product__img" src="./imgs/iamwoman-mobile-assets/icons8-team-355985-unsplash.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+              </figure>
+            </li>
+            <li class="slider-intro__item" data-index-number="02">
+              <figure class="product" >
+                <figcaption class="product__title">
+                  <span class="product__name">Спортивный желтый костюм</span>
+                  <span class="product__price">9 900 рублей</span>
+                </figcaption>
+                <picture>
+                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/dom-hill-512919-unsplash.jpg">
+                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/dom-hill-512919-unsplash.jpg">
+                  <img class="product__img" src="./imgs/iamwoman-mobile-assets/dom-hill-512919-unsplash.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+              </figure>
+            </li>
+            <li class="slider-intro__item" data-index-number="03">
+              <figure class="product" >
+                <figcaption class="product__title">
+                  <span class="product__name">Платье – халат со стразами</span>
+                  <span class="product__price">9 900 рублей</span>
+                </figcaption>
+                <picture>
+                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/raechel-romero-309859-unsplash.jpg">
+                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/raechel-romero-309859-unsplash.jpg">
+                  <img class="product__img" src="./imgs/iamwoman-mobile-assets/raechel-romero-309859-unsplash.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+              </figure>
+            </li>
+          </ul>          
+          <div class="slider-intro__nav">
+            <p class="intro-nav">
+              <button class="slider-btn slider-btn--pd js__prev">
+                <i class="fal fa-chevron-left"></i>
+              </button>
+              <span class="intro-nav__count js__countProd">01</span>
+              <span class="intro-nav__slash">/</span>
+              <span class="intro-nav__count intro-nav__count--total">3</span>
+              <button class="slider-btn slider-btn--pd js__next">
+                <i class="fal fa-chevron-right"></i>
+              </button>
+            </p>
+            <a class="slider-intro__link link" href="#">Смотреть все</a>
+          </div>        
         </div>
       </div>
     </div>
@@ -220,90 +216,88 @@
       </p>
     </header>
     <div class="container">
-      <div class="slider slider--merch js__slider-merch">
-        <div class="slider__frame slider__frame--merch js__frame">
-          <ul class="slider__slide-wrapper slider__slide-wrapper--merch js__slides">
-            <li class="slider__item slider__item--merch js__slide">
-              <figure class="new-merch">
-                <div class="new-merch__product">
-                  <span class="new-merch__like">
-                    <i class="fal fa-heart"></i>
-                  </span>
-                  <picture>
-                    <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/alex-iby-317332-unsplash.jpg">
-                    <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/alex-iby-317332-unsplash.jpg">
-                    <img class="new-merch__img" src="./imgs/iamwoman-mobile-assets/alex-iby-317332-unsplash.jpg" alt="Flowers" style="width:auto;">
-                  </picture>
-                  <p class="new-merch__nav">
-                    <button class="new-merch__btn"><i class="fal fa-chevron-left"></i></button>
-                    <span class="new-merch__nav-slash"></span>
-                    <button class="new-merch__btn"><i class="fal fa-chevron-right"></i></button>
-                  </p>
-                </div>
-                <figcaption class="new-merch__title">
-                  <span class="new-merch__name">Платье - боди</span>
-                  <span class="new-merch__price">11 700 рублей</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="slider__item slider__item--merch js__slide">
-              <figure class="new-merch">
-                <div class="new-merch__product">
-                  <span class="new-merch__like">
-                    <i class="fal fa-heart"></i>
-                  </span>
-                  <picture>
-                    <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/ao-276766-unsplash.jpg">
-                    <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/ao-276766-unsplash.jpg">
-                    <img class="new-merch__img" src="./imgs/iamwoman-mobile-assets/ao-276766-unsplash.jpg" alt="Flowers" style="width:auto;">
-                  </picture>
-                  <p class="new-merch__nav">
-                    <button class="new-merch__btn"><i class="fal fa-chevron-left"></i></button>
-                    <span class="new-merch__nav-slash"></span>
-                    <button class="new-merch__btn"><i class="fal fa-chevron-right"></i></button>
-                  </p>
-                </div>
-                <figcaption class="new-merch__title">
-                  <span class="new-merch__name">Этническое платье</span>
-                  <span class="new-merch__price">7 800 рублей</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="slider__item slider__item--merch js__slide">
-              <figure class="new-merch">
-                <div class="new-merch__product">
-                  <span class="new-merch__like">
-                    <i class="fal fa-heart"></i>
-                  </span>
-                  <picture>
-                    <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/flaunter-com-178022-unsplash.jpg">
-                    <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/flaunter-com-178022-unsplash.jpg">
-                    <img class="new-merch__img" src="./imgs/iamwoman-mobile-assets/flaunter-com-178022-unsplash.jpg" alt="Flowers" style="width:auto;">
-                  </picture>
-                  <p class="new-merch__nav">
-                    <button class="new-merch__btn"><i class="fal fa-chevron-left"></i></button>
-                    <span class="new-merch__nav-slash"></span>
-                    <button class="new-merch__btn"><i class="fal fa-chevron-right"></i></button>
-                  </p>
-                </div>
-                <figcaption class="new-merch__title">
-                  <span class="new-merch__name">Шелковое платье<span class="new-merch__name--visable-desk"> с принтом</span></span>
-                  <span class="new-merch__price">4 800 рублей</span>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-        <p class="slider__merch-nav">
-          <button class="slider__btn slider__btn--prev js__prev">
+      <div class="slider-merch">
+        <ul class="slider-merch__wrapper js__sliderMerch">
+          <li class="slider-merch__item">
+            <figure class="new-merch">
+              <div class="new-merch__product">
+                <span class="new-merch__like">
+                  <i class="fal fa-heart"></i>
+                </span>
+                <picture>
+                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/alex-iby-317332-unsplash.jpg">
+                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/alex-iby-317332-unsplash.jpg">
+                  <img class="new-merch__img" src="./imgs/iamwoman-mobile-assets/alex-iby-317332-unsplash.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+                <p class="new-merch__nav">
+                  <button class="new-merch__btn"><i class="fal fa-chevron-left"></i></button>
+                  <span class="new-merch__nav-slash"></span>
+                  <button class="new-merch__btn"><i class="fal fa-chevron-right"></i></button>
+                </p>
+              </div>
+              <figcaption class="new-merch__title">
+                <span class="new-merch__name">Платье - боди</span>
+                <span class="new-merch__price">11 700 рублей</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="slider-merch__item">
+            <figure class="new-merch">
+              <div class="new-merch__product">
+                <span class="new-merch__like">
+                  <i class="fal fa-heart"></i>
+                </span>
+                <picture>
+                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/ao-276766-unsplash.jpg">
+                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/ao-276766-unsplash.jpg">
+                  <img class="new-merch__img" src="./imgs/iamwoman-mobile-assets/ao-276766-unsplash.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+                <p class="new-merch__nav">
+                  <button class="new-merch__btn"><i class="fal fa-chevron-left"></i></button>
+                  <span class="new-merch__nav-slash"></span>
+                  <button class="new-merch__btn"><i class="fal fa-chevron-right"></i></button>
+                </p>
+              </div>
+              <figcaption class="new-merch__title">
+                <span class="new-merch__name">Этническое платье</span>
+                <span class="new-merch__price">7 800 рублей</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="slider-merch__item">
+            <figure class="new-merch">
+              <div class="new-merch__product">
+                <span class="new-merch__like">
+                  <i class="fal fa-heart"></i>
+                </span>
+                <picture>
+                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/flaunter-com-178022-unsplash.jpg">
+                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/flaunter-com-178022-unsplash.jpg">
+                  <img class="new-merch__img" src="./imgs/iamwoman-mobile-assets/flaunter-com-178022-unsplash.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+                <p class="new-merch__nav">
+                  <button class="new-merch__btn"><i class="fal fa-chevron-left"></i></button>
+                  <span class="new-merch__nav-slash"></span>
+                  <button class="new-merch__btn"><i class="fal fa-chevron-right"></i></button>
+                </p>
+              </div>
+              <figcaption class="new-merch__title">
+                <span class="new-merch__name">Шелковое платье<span class="new-merch__name--visable-desk"> с принтом</span></span>
+                <span class="new-merch__price">4 800 рублей</span>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <p class="slider-merch__nav">
+          <button class="slider-btn slider-btn--large js__prev">
             <i class="fal fa-chevron-left"></i>
           </button>
-          <button class="slider__btn slider__btn--next js__next">
+          <button class="slider-btn slider-btn--large js__next">
             <i class="fal fa-chevron-right"></i>
           </button>
-        </p>        
+        </p>
       </div>
-    </div>
+     </div>
     <footer class="section__footer">
       <a class="link link--underline_b" href="#">Смотреть все</a>
     </footer>
@@ -331,71 +325,69 @@
       <h2 class="section__title section__title--blog">Блог</h2>
     </header>
     <div class="container container--desktop">
-      <div class="slider slider--blog js__slider-blog">
-        <div class="slider__frame slider__frame--blog js__frame">
-          <ul class="slider__slide-wrapper slider__slide-wrapper--blog js__slides">
-            <li class="slider__item slider__item--blog js__slide">
-              <article class="blog-post">
-                <span class="blog-post__tag">новости</span>
-                <picture>
-                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/shannon-ciricillo-711962-unsplash.jpg">
-                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/shannon-ciricillo-711962-unsplash.jpg">
-                  <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/shannon-ciricillo-711962-unsplash.jpg" alt="Flowers" style="width:auto;">
-                </picture>
-                <h2 class="blog-post__title">Аксессуары осень — зима <span class="comma">,</span>18</h2>
-                <p class="blog-post__text">Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, ну а неправильно — испортят ваш лук</p>
-              </article>
-            </li>
-            <li class="slider__item slider__item--blog js__slide">
-              <article class="blog-post">
-                <span class="blog-post__tag">советы</span>
-                <picture>
-                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/stil-243522-unsplash.jpg">
-                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/stil-243522-unsplash.jpg">
-                  <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/stil-243522-unsplash.jpg" alt="Flowers" style="width:auto;">
-                </picture>
-                <h2 class="blog-post__title">3 крутых образа для офиса</h2>
-                <p class="blog-post__text">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
-              </article>
-            </li>
-            <li class="slider__item slider__item--blog js__slide">
-              <article class="blog-post">
-                <span class="blog-post__tag">советы</span>
-                <picture>
-                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/vitaly-nikolenko-656064-unsplash.jpg">
-                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/vitaly-nikolenko-656064-unsplash.jpg">
-                  <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/vitaly-nikolenko-656064-unsplash.jpg" alt="Flowers" style="width:auto;">
-                </picture>
-                <h2 class="blog-post__title">Лучший выбор: <span class="ws-nw">костюмы <span class="comma">,</span>18</span></h2>
-                <p class="blog-post__text">Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни</p>
-              </article>
-            </li>
-            <li class="slider__item slider__item--blog js__slide">
-              <article class="blog-post">
-                <span class="blog-post__tag">тенденции</span>
-                <picture>
-                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/alberto-bobbera-521685-unsplash.jpg">
-                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/alberto-bobbera-521685-unsplash.jpg">
-                  <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/alberto-bobbera-521685-unsplash.jpg" alt="Flowers" style="width:auto;">
-                </picture>
-                <h2 class="blog-post__title">С чем носить ультрафиолет?</h2>
-                <p class="blog-post__text">Уже не первый сезон монохромные образы являются одной изглавных тенденций. Дизайнеры и стилисты призывают подбирать вещи в рамках одного сектора цветового круга</p>
-              </article>
-            </li>
-            <li class="slider__item slider__item--blog js__slide">
-              <article class="blog-post">
-                <span class="blog-post__tag">советы</span>
-                <picture>
-                  <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/stil-243522-unsplash.jpg">
-                  <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/stil-243522-unsplash.jpg">
-                  <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/stil-243522-unsplash.jpg" alt="Flowers" style="width:auto;">
-                </picture>
-                <h2 class="blog-post__title">3 крутых образа для офиса</h2>
-                <p class="blog-post__text">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
-              </article>
-            </li>
-          </ul>
-        </div>
+      <div class="slider-blog">
+        <ul class="slider-blog__wrapper js__sliderBlog">
+          <li class="slider-blog__item">
+            <article class="blog-post">
+              <span class="blog-post__tag">новости</span>
+              <picture>
+                <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/shannon-ciricillo-711962-unsplash.jpg">
+                <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/shannon-ciricillo-711962-unsplash.jpg">
+                <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/shannon-ciricillo-711962-unsplash.jpg" alt="Flowers" style="width:auto;">
+              </picture>
+              <h2 class="blog-post__title">Аксессуары осень — зима <span class="comma">,</span>18</h2>
+              <p class="blog-post__text">Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, ну а неправильно — испортят ваш лук</p>
+            </article>
+          </li>
+          <li class="slider-blog__item">
+            <article class="blog-post">
+              <span class="blog-post__tag">советы</span>
+              <picture>
+                <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/stil-243522-unsplash.jpg">
+                <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/stil-243522-unsplash.jpg">
+                <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/stil-243522-unsplash.jpg" alt="Flowers" style="width:auto;">
+              </picture>
+              <h2 class="blog-post__title">3 крутых образа для офиса</h2>
+              <p class="blog-post__text">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
+            </article>
+          </li>
+          <li class="slider-blog__item">
+            <article class="blog-post">
+              <span class="blog-post__tag">советы</span>
+              <picture>
+                <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/vitaly-nikolenko-656064-unsplash.jpg">
+                <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/vitaly-nikolenko-656064-unsplash.jpg">
+                <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/vitaly-nikolenko-656064-unsplash.jpg" alt="Flowers" style="width:auto;">
+              </picture>
+              <h2 class="blog-post__title">Лучший выбор: <span class="ws-nw">костюмы <span class="comma">,</span>18</span></h2>
+              <p class="blog-post__text">Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни</p>
+            </article>
+          </li>
+          <li class="slider-blog__item">
+            <article class="blog-post">
+              <span class="blog-post__tag">тенденции</span>
+              <picture>
+                <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/alberto-bobbera-521685-unsplash.jpg">
+                <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/alberto-bobbera-521685-unsplash.jpg">
+                <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/alberto-bobbera-521685-unsplash.jpg" alt="Flowers" style="width:auto;">
+              </picture>
+              <h2 class="blog-post__title">С чем носить ультрафиолет?</h2>
+              <p class="blog-post__text">Уже не первый сезон монохромные образы являются одной изглавных тенденций. Дизайнеры и стилисты призывают подбирать вещи в рамках одного сектора цветового круга</p>
+            </article>
+          </li>
+          <li class="slider-blog__item">
+            <article class="blog-post">
+              <span class="blog-post__tag">советы</span>
+              <picture>
+                <source media="(min-width: 1180px)" srcset="./imgs/iamwoman-desktop-assets/stil-243522-unsplash.jpg">
+                <source media="(min-width: 764px)" srcset="./imgs/iamwoman-tablet-assets/stil-243522-unsplash.jpg">
+                <img class="blog-post__img" src="./imgs/iamwoman-mobile-assets/stil-243522-unsplash.jpg" alt="Flowers" style="width:auto;">
+              </picture>
+              <h2 class="blog-post__title">3 крутых образа для офиса</h2>
+              <p class="blog-post__text">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
+            </article>
+          </li>
+        </ul>
       </div>
     </div>
     <footer class="section__footer section__footer--blog">
@@ -515,8 +507,7 @@
     </div>
   </footer>
 
-  <!-- <script src="./js/lorySlider__script.js"></script> -->
-  <!-- <script src="./js/tinySlider__script.js"></script> -->
   <!-- <script src="./js/navMenu.js"></script> -->
+  <script src="./js/tinySlider__script.js"></script>
 </body>
 </html>

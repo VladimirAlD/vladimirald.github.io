@@ -181,22 +181,18 @@
   &__slider {
     position: absolute;
     z-index: 1;
-    // left: 0;
-    right: 0;
     top: calc(-50% - 5px);
-    // right: 0;
-
-    // top: calc(50%);
     right: 15px;
-    // transform: translate(0, 50%);
-    
+    max-width: 219px;
     @media(min-width: 764px) {
       top: 90px;
       right: 60px;
+      max-width: 393px;
     }
     @media(min-width: 1180px) {
       top: 80px;
       right: 90px;
+      max-width: 605px;
     }
   }
 }
