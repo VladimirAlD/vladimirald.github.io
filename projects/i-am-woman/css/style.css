@@ -166,6 +166,9 @@ img {
     max-width: none;
   }
 }
+.container--blog {
+  position: relative;
+}
 .site-wrapper {
   min-width: 320px;
   width: 100%;
@@ -261,7 +264,7 @@ img {
   }
 }
 .site-intro {
-  --product: url("../imgs/icons8-team-355985-unsplash.jpg");
+  --product: url("../../imgs/iamwoman-mobile-assets/icons8-team-355985-unsplash.jpg");
   position: relative;
   display: flex;
   align-items: center;
@@ -455,6 +458,7 @@ img {
   z-index: 1;
   top: calc(-50% - 5px);
   right: 15px;
+  width: 100%;
   max-width: 219px;
 }
 @media (min-width: 764px) {
@@ -1183,7 +1187,7 @@ img {
   }
 }
 .section__footer--blog {
-  margin-top: 106px;
+  margin-top: 38px;
 }
 @media (min-width: 764px) {
   .section__footer--blog {
@@ -1244,6 +1248,18 @@ img {
   max-width: 100%;
   height: auto;
   pointer-events: none;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    not supported by any browser */
 }
 .new-merch__like {
   position: absolute;
@@ -1487,6 +1503,18 @@ img {
   height: auto;
   margin-bottom: 4px;
   pointer-events: none;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    not supported by any browser */
 }
 @media (min-width: 1180px) {
   .blog-post__img {
@@ -1518,6 +1546,71 @@ img {
   letter-spacing: 0.05em;
   line-height: 1.2;
   text-align: center;
+}
+.countbar {
+  margin-top: 67px;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 764px) {
+  .countbar {
+    position: absolute;
+    top: -122px;
+    right: 0;
+  }
+}
+@media (min-width: 1180px) {
+  .countbar {
+    top: -190px;
+  }
+}
+.countbar__track {
+  position: relative;
+  width: 207px;
+  height: 1px;
+  background-color: #000;
+}
+@media (min-width: 1180px) {
+  .countbar__track {
+    width: 351px;
+  }
+}
+.countbar__thumb {
+  position: absolute;
+  width: 78px;
+  bottom: -1px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid #000;
+  transition: all 0.5s ease;
+}
+@media (min-width: 1180px) {
+  .countbar__thumb {
+    width: 93px;
+  }
+}
+.countbar__meter {
+  margin-bottom: 10px;
+}
+.countbar__slash {
+  font-size: 24px;
+}
+.countbar__count {
+  font-size: 24px;
+}
+@media (min-width: 1180px) {
+  .countbar__count {
+    font-size: 30px;
+  }
+}
+.countbar__count--small {
+  font-size: 16px;
+}
+@media (min-width: 1180px) {
+  .countbar__count--small {
+    font-size: 18px;
+  }
 }
 .subscribe {
   padding: 24px 17px;

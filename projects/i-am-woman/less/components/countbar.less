@@ -1,0 +1,54 @@
+.countbar {
+  margin-top: 67px;
+  display: flex;
+  justify-content: center;
+  @media (min-width: 764px) {
+    position: absolute;
+    top: -122px;
+    right: 0;
+  }
+  @media (min-width: 1180px) {
+    top: -190px;
+  }
+  &__track {
+    // margin-top: 100px;
+    position: relative;
+    width: 207px;
+    height: 1px;
+    background-color: #000;
+    @media (min-width: 1180px) {
+      width: 351px;
+    }
+  }
+  &__thumb {
+    position: absolute;
+    width: 78px;
+    bottom: -1px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid #000;
+    transition: all .5s ease;
+    @media (min-width: 1180px) {
+      width: 93px;
+    }
+  }
+  &__meter {
+    margin-bottom: 10px;
+  }
+  &__slash {
+    font-size: 24px;
+  }
+  &__count {
+    font-size: 24px;
+    @media (min-width: 1180px) {
+      font-size: 30px;
+    }
+    &--small {
+      font-size: 16px;
+      @media (min-width: 1180px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -353,6 +353,8 @@ html, body {
     color: #fff;
     font-family: 'Bigilla';
     line-height: 1.5; }
+  .project-list__img {
+    font-size: 1rem; }
 
 .social-list__link {
   font-size: 1.2rem; }

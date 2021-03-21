@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SwedishBitter</title>
   <!-- Pixel Glass -->
-  <style>
+  <!-- <style>
     HTML {
       background-repeat: no-repeat;
       background-position:  50% 0;
@@ -29,7 +29,7 @@
     }
   </style>
   <link rel="stylesheet" href="./pp/styles.css">
-  <script src="./pp/script.js"></script>
+  <script src="./pp/script.js"></script> -->
   <!-- // Pixel Glass -->
   <link rel="stylesheet" href="./js/tiny-slider/tiny-slider.css">
   <link rel="stylesheet" href="./fonts/FontAwesomePro/css/all.min.css">
@@ -147,7 +147,7 @@
       <div class="site-intro__slider">
         <div class="slider-intro">
           <ul class="slider-intro__wrapper js__sliderIntro">
-            <li class="slider-intro__item" data-index-number="01">
+            <li class="slider-intro__item">
               <figure class="product" >
                 <figcaption class="product__title">
                   <span class="product__name">Хлопковое платье в полоску</span>
@@ -160,7 +160,7 @@
                 </picture>
               </figure>
             </li>
-            <li class="slider-intro__item" data-index-number="02">
+            <li class="slider-intro__item">
               <figure class="product" >
                 <figcaption class="product__title">
                   <span class="product__name">Спортивный желтый костюм</span>
@@ -173,7 +173,7 @@
                 </picture>
               </figure>
             </li>
-            <li class="slider-intro__item" data-index-number="03">
+            <li class="slider-intro__item">
               <figure class="product" >
                 <figcaption class="product__title">
                   <span class="product__name">Платье – халат со стразами</span>
@@ -186,7 +186,7 @@
                 </picture>
               </figure>
             </li>
-          </ul>          
+          </ul>
           <div class="slider-intro__nav">
             <p class="intro-nav">
               <button class="slider-btn slider-btn--pd js__prev">
@@ -324,7 +324,7 @@
     <header class="section__header">
       <h2 class="section__title section__title--blog">Блог</h2>
     </header>
-    <div class="container container--desktop">
+    <div class="container container--desktop container--blog">
       <div class="slider-blog">
         <ul class="slider-blog__wrapper js__sliderBlog">
           <li class="slider-blog__item">
@@ -388,6 +388,17 @@
             </article>
           </li>
         </ul>
+      </div>
+      <div class="countbar">
+        <div class="countbar__track">
+          <div class='countbar__thumb'>
+            <p class="countbar__meter">
+              <span class="countbar__count js__countCurrent">01</span>
+              <span class="countbar__slash">/</span>
+              <span class="countbar__count countbar__count--small">5</span>    
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="section__footer section__footer--blog">
@@ -509,5 +520,6 @@
 
   <!-- <script src="./js/navMenu.js"></script> -->
   <script src="./js/tinySlider__script.js"></script>
+  <script src="./js/countbarChange.js"></script>
 </body>
 </html>

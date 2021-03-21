@@ -3,6 +3,7 @@ const sliderIntro = tns({
   items: 1,
   rewind: true,
   autoplay: true,
+  autoplayHoverPause: true,
   autoplayButtonOutput: false,
   controls: true,
   prevButton: '.slider-intro__nav .js__prev',
@@ -48,11 +49,13 @@ const sliderBlog = tns({
   responsive: {
     764: {
       gutter: 20,
-      items: 2
+      items: 2,
+      center: true
     },
     1180: {
       items: 3,
       gutter: 30,
+      center: true
     }
   }
 })
