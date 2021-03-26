@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <!-- General meta tags needed-->
-  <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <!-- Needed for responsive design -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -17,9 +15,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <!-- endbuild -->
 </head>
-
 <body class="site-body">
-  <!-- main screen -->
   <header class="site-header">
     <div class="navbar">
       <div class="container">
@@ -31,16 +27,18 @@
         <div class="hr"></div>
       </div>
     </div>
-    <!-- headline -->
     <div class="headline">
       <div class="container">
-        <div class="headline__wrapper">
+        <div class="headline__text-wrapper">
           <h1 class="headline__title">Vladimir<br>Dubovitskikh<br><span class="headline__subtitle">HTML coder</span>
           </h1>
         </div>
-        <!-- head image -->
         <div class="headline__image-container rellax" data-rellax-speed="2">
-          <img src="./img/head.png" alt="" class="headline__image">
+          <picture>
+            <source srcset="./img/webp/head.webp" type="image/webp">
+            <source srcset="./img/head.png">
+            <img src="./img/head.png" alt="Intro image" loading="lazy" decoding="async" class="headline__image">
+          </picture>
         </div>
       </div>
     </div>
@@ -57,16 +55,9 @@
         </div>
         <div class="section-inner about">
           <div class="about__wrapper">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              quasi sapiente nisi minus neque non explicabo, magni cumque enim
-              aut!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
-              eaque nobis. Quidem sint ratione quos veniam!
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Меня зовут Владимир. Я начал увлекаться веб-разработкой, когда был на 2 курсе магистратуры. Это были Udemy, HTML Academy, freeCodeCamp, YouTube и конечно же Google и Stack Overflow.</p>
+            <p>На протяжении этого времени я старался улучшать свои навыки, узнавать больше о лучших практиках, писать чистый и понятный код. Желаю присоединиться к компании, где у меня будет возможность развить свои компетенции и приобрести новый опыт.</p>
+            <p>В личном плане я мотивирован, трудолюбив и быстро учусь. Готов вникать в ваши задачи и создавать современные цифровые приложения.</p>
           </div>
         </div>
       </div>
@@ -85,39 +76,39 @@
             <ul class="project-list">
               <li class="project-list__item">
                 <a href="./projects/anfalova/index.html" class="project-list__link">/ Anfalova</a>
-                <img src="./img/anfalova.jpg" alt="Фитнес-тренер Наталья Иванова | Дизайн Крис Анфалова" class="project-list__img">
+                <img src="./img/anfalova.jpg" alt="Фитнес-тренер Наталья Иванова | Дизайн Крис Анфалова" loading="lazy" decoding="async" class="project-list__img">
                 <div class="marquee">
                   <div class="marquee__inner">
-                    <spam class="marquee__item">Anfalova</spam>
-                    <spam class="marquee__item">Anfalova</spam>
-                    <spam class="marquee__item">Anfalova</spam>
-                    <spam class="marquee__item">Anfalova</spam>
+                    <span class="marquee__item">Anfalova</span>
+                    <span class="marquee__item">Anfalova</span>
+                    <span class="marquee__item">Anfalova</span>
+                    <span class="marquee__item">Anfalova</span>
                   </div>
                 </div>
                 <div class="hr"></div>
               </li>
               <li class="project-list__item">
                 <a href="./projects/voronina/index.html" class="project-list__link">/ Voronina</a>
-                <img src="./img/voronina.jpg" alt="" class="project-list__img">
+                <img src="./img/voronina.jpg" alt="Voronina" loading="lazy" decoding="async" class="project-list__img">
                 <div class="marquee">
                   <div class="marquee__inner">
-                    <spam class="marquee__item">Voronina</spam>
-                    <spam class="marquee__item">Voronina</spam>
-                    <spam class="marquee__item">Voronina</spam>
-                    <spam class="marquee__item">Voronina</spam>
+                    <span class="marquee__item">Voronina</span>
+                    <span class="marquee__item">Voronina</span>
+                    <span class="marquee__item">Voronina</span>
+                    <span class="marquee__item">Voronina</span>
                   </div>
                 </div>
                 <div class="hr"></div>
               </li>
               <li class="project-list__item">
                 <a href="./projects/i-am-woman/index.html" class="project-list__link">/ I am women</a>
-                <img src="./img/i-am-woman.jpg" alt="I am woman" class="project-list__img">
+                <img src="./img/i-am-woman.jpg" alt="I am woman" loading="lazy" decoding="async" class="project-list__img">
                 <div class="marquee">
                   <div class="marquee__inner">
-                    <spam class="marquee__item">I am woman</spam>
-                    <spam class="marquee__item">I am woman</spam>
-                    <spam class="marquee__item">I am woman</spam>
-                    <spam class="marquee__item">I am woman</spam>
+                    <span class="marquee__item">I am woman</span>
+                    <span class="marquee__item">I am woman</span>
+                    <span class="marquee__item">I am woman</span>
+                    <span class="marquee__item">I am woman</span>
                   </div>
                 </div>
                 <div class="hr"></div>
@@ -137,15 +128,50 @@
           <div class="hr"></div>
         </div>
         <div class="section-inner">
-          <ul class="skills-list">
-            <li class="skills-list__item skills-list__item--html">html</li>
-            <li class="skills-list__item skills-list__item--css">css</li>
-            <li class="skills-list__item skills-list__item--js">js</li>
-            <li class="skills-list__item skills-list__item--git">git</li>
-            <li class="skills-list__item skills-list__item--gulp">gulp</li>
-            <li class="skills-list__item skills-list__item--scss">scss</li>
-            <li class="skills-list__item skills-list__item--less">less</li>
-          </ul>
+          <dl class="skills-list">
+            <div class="skills-list__item">
+              <dt class="skills-list__term">HTML</dt>
+              <dd class="skills-list__def">
+                Знаю, как семантически правильно разметить ваши страницы.
+              </dd>
+            </div>
+            <div class="skills-list__item">
+              <dt class="skills-list__term">CSS</dt>
+              <dd class="skills-list__def">
+                Знаю, как точно отразить ваш макет во viewport-е мобильных и десктопных браузерах.
+              </dd>
+            </div>
+            <div class="skills-list__item">
+              <dt class="skills-list__term">JS</dt>
+              <dd class="skills-list__def">
+                Знаю, как вот отсюда вот сюда, чтобы вот здесь вот хорошо было. Заставлю работать всплывающие окна, прикручу карты, разберусь почему не работает эта кнопка.
+              </dd>
+            </div>
+            <div class="skills-list__item">
+              <dt class="skills-list__term">SCSS</dt>
+              <dd class="skills-list__def">
+  <pre>@mixin scss {}
+.skills {
+  html;
+  css;
+  js;
+  @include scss;
+}</pre>
+              </dd>
+            </div>
+            <div class="skills-list__item">
+              <dt class="skills-list__term">GULP</dt>
+              <dd class="skills-list__def">
+                Использую его для ускорения верстки - отптимизации изображений, минификации кода и сборки проекта
+              </dd>
+            </div>
+            <div class="skills-list__item">
+              <dt class="skills-list__term">GIT</dt>
+              <dd class="skills-list__def">
+                &#955;&nbsp;&nbsp;&nbsp;&nbsp;git push skills git-knowledge<span class="flash-cursor">|</span>
+              </dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
@@ -161,16 +187,16 @@
         <div class="section-inner">
           <ul class="social-list">
             <li class="social-list__item">
-              <a href="#" class="social-list__link">linkedin.</a>
+              <a href="https://www.linkedin.com/in/%D0%B2%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80-%D0%B4%D1%83%D0%B1%D0%BE%D0%B2%D0%B8%D1%86%D0%BA%D0%B8%D1%85-a01b42209/" target="_blank" class="social-list__link">linkedin.</a>
             </li>
             <li class="social-list__item">
-              <a href="#" class="social-list__link">github.</a>
+              <a href="https://github.com/VladimirAlD" target="_blank" class="social-list__link">github.</a>
             </li>
             <li class="social-list__item">
-              <a href="#" class="social-list__link">mail.</a>
+              <a href="mailto:gglmail96@gmail.com" class="social-list__link">mail.</a>
             </li>
             <li class="social-list__item">
-              <a href="#" class="social-list__link">phone.</a>
+              <a href="tel:+79225548726" class="social-list__link">phone.</a>
             </li>
           </ul>
         </div>
