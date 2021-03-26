@@ -53,43 +53,36 @@ a {
   font-family: 'MonumentExtended-Light';
   src: url("../fonts/Monument/MonumentExtended-Light.woff2") format("woff2"), url("../fonts/Monument/MonumentExtended-Light.otf") format("opentype");
   font-style: normal;
-  font-weight: 300; }
+  font-weight: 300;
+  font-display: swap; }
 
 @font-face {
   font-family: 'MonumentExtended-Regular';
   src: url("../fonts/Monument/MonumentExtended-Regular.woff2") format("woff2"), url("../fonts/Monument/MonumentExtended-Regular.otf") format("opentype");
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: swap; }
 
 @font-face {
   font-family: 'MonumentExtended-Black';
   src: url("../fonts/Monument/MonumentExtended-Black.woff2") format("woff2"), url("../fonts/Monument/MonumentExtended-Black.otf") format("opentype");
   font-style: normal;
-  font-weight: 900; }
-
-@font-face {
-  font-family: 'Sk-Modernist-Regular';
-  src: url("../fonts/Sk-Modernist/Sk-Modernist-Regular.otf") format("opentype");
-  font-style: normal;
-  font-weight: 400; }
+  font-weight: 900;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Bigilla';
   src: url("../fonts/Bigilla/Bigilla-Bold.otf") format("opentype");
   font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: 'Poppins';
-  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 400; }
+  font-weight: 700;
+  font-display: swap; }
 
 @font-face {
   font-family: 'NotoSans';
   src: url("../fonts/NotoSans/NotoSans-Regular.ttf") format("truetype");
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: swap; }
 
 html::-webkit-scrollbar {
   width: 8px;
