@@ -5,22 +5,22 @@
     position: fixed;
     z-index: 100;
     display: none;
-    background-image: linear-gradient(var(--gray7), var(--gray7)), url("../imgs/mobile-assets/lauren-fleischmann-469994-unsplash.jpg");
+    background-image: linear-gradient(@gray7, @gray7), url("../imgs/mobile-assets/lauren-fleischmann-469994-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
     overflow: auto;
 
     @media(min-width: 764px) {
-      background-image: linear-gradient(to right, var(--gray) 0, 
-        var(--gray) 50px, var(--gray7) 50px, 
-        var(--gray7) 60%, var(--gray8) 100%), 
+      background-image: linear-gradient(to right, @gray 0, 
+        @gray 50px, @gray7 50px, 
+        @gray7 60%, @gray8 100%), 
         url("../imgs/mobile-assets/lauren-fleischmann-469994-unsplash.jpg");
     }
     @media(min-width: 1180px) {
-      background-image: linear-gradient(to right, var(--gray) 0, 
-        var(--gray) 75px, var(--gray7) 75px, 
-        var(--gray7) 60%, var(--gray8) 100%), 
+      background-image: linear-gradient(to right, @gray 0, 
+        @gray 75px, @gray7 75px, 
+        @gray7 60%, @gray8 100%), 
         url("../imgs/mobile-assets/lauren-fleischmann-469994-unsplash.jpg");
     }
   }
@@ -93,11 +93,11 @@
 
     font-size: 16px;
     font-weight: 400;
-    color: var(--black);
+    color: @black;
 
     @media(min-width: 1180px) {
-      font-size: 18px;
       margin-bottom: 20px;
+      font-size: 18px;
     }
 
     &--mobile {
@@ -154,8 +154,8 @@
     display: none;
     &--tablet {
       @media(min-width: 764px) and (max-width: 1180px) {
-        display: flex;        
         position: absolute;
+        display: flex;        
         left: 0;
         bottom: -100px;
     }
@@ -181,14 +181,14 @@
     & input {
       width: 100%;
       margin-left: 30px;
+      border: none;
+      background: none;
 
       font-family: inherit;
       font-size: 18px;
       font-weight: 400;
       color: #342b2b;
 
-      background: none;
-      border: none;
 
       &:focus {
         outline: none;

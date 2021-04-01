@@ -1,18 +1,18 @@
 .site-intro {
-  --product: url("../../imgs/iamwoman-mobile-assets/icons8-team-355985-unsplash.jpg");
+  @product: url("../../imgs/iamwoman-mobile-assets/icons8-team-355985-unsplash.jpg");
   position: relative;
   display: flex;
   align-items: center;
   min-height: 490px;
   background-color: #f0eae7;
-  background-image: linear-gradient(var(--gray8), var(--gray8)), var(--product);
+  background-image: linear-gradient(@gray8, @gray8), @product;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 
   @media(min-width: 764px) {
     min-height: 823px;
-    background-image: linear-gradient(to right, var(--gray) 0, var(--gray) 50px, #fff 50px, #fff 60%, var(--gray8) 60%, var(--gray8)), var(--product);
+    background-image: linear-gradient(to right, @gray 0, @gray 50px, #fff 50px, #fff 60%, @gray8 60%, @gray8), @product;
     background-repeat: no-repeat;
     background-position: 0 0, right top;
     background-size: auto 120%;
@@ -20,10 +20,10 @@
 
   @media(min-width: 1180px) {
     min-height: 840px;
-    background-image: linear-gradient(to right, var(--gray) 0, var(--gray) 75px,
+    background-image: linear-gradient(to right, @gray 0, @gray 75px,
      #fff 75px, #fff 50%, 
-     var(--gray8) 50%, var(--gray8)), 
-     var(--product);
+     @gray8 50%, @gray8), 
+     @product;
 
     &::before {
       content: '';
@@ -53,9 +53,9 @@
     }
     @media(min-width: 1180px) {
       min-height: 840px; // надо переменную
-      margin-left: -37px;
       padding-left: 0;
       padding-bottom: 80px;
+      margin-left: -37px;
     }
   }
 
@@ -96,9 +96,9 @@
       bottom: 162px;
       left: calc(48px / 2);
       z-index: 100;
-      display: block;
       transform: rotate(-90deg);
       transform-origin: left center;
+      display: block;
     }
     @media(min-width: 1180px) {
       bottom: 235px;
@@ -109,14 +109,14 @@
       display: none;
 
       @media(min-width: 764px) {
-        display: block;
         content:'';
         position: absolute;
         top: 50%;
         left: -120%;
+        display: block;
         width: 95px;
         height: 2px;
-        background-color: var(--black);
+        background-color: @black;
       }
       @media(min-width: 1180px) {
         left: -90%;
@@ -127,7 +127,7 @@
   &__offer {
     font-size: 14px;
     font-weight: 300;
-    color: var(--black);
+    color: @black;
     line-height: 14px;
     letter-spacing: 0.05em;
     

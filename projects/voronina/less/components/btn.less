@@ -1,5 +1,6 @@
 .btn {
-  --color: #fff;
+  @white: #fff;
+  @black: #212021;
   position: relative;
   margin: 0;
   padding: 0;
@@ -7,12 +8,13 @@
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  color: var(--color);
+  color: @white;
 
-  border-bottom: 2px solid var(--color);
+  border-bottom: 2px solid @white;
 
-  @media (min-width: 765px){
-    --color: #212021;
+  @media (min-width: 764px){
+    color: @black;
+    border-bottom: 2px solid @black;
   }
   
   &::after {
@@ -23,8 +25,11 @@
     width: 26px;
     height: 2px;
 
-    background-color: var(--color);
+    background-color: @white;
     transition: all .5s;
+    @media (min-width: 764px) {
+      background-color: @black;
+    }
   }
 
   &:hover {
@@ -49,7 +54,7 @@
     background-position: center center;
     background-size: cover;
     z-index: 1;
-    @media (min-width: 765px){
+    @media (min-width: 764px){
       width: 32px;
       height: 36px;
     }

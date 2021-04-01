@@ -38,3 +38,4 @@ sliderIntro.events.on('indexChanged', function(){
     document.querySelector('.js__countProd').innerHTML = currentSlide;
   }
 })
+
