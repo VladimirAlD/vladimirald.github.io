@@ -668,12 +668,6 @@ a[href^="http"]:empty::before {
   max-width: 320px;
   margin: 0 auto;
 }
-.masonry-list__item--pt100 {
-  padding-top: 100px;
-}
-.masonry-list__item--pt120 {
-  padding-top: 120px;
-}
 .masonry-list__item--nmt150 {
   margin-top: -150px;
 }
@@ -683,6 +677,12 @@ a[href^="http"]:empty::before {
   }
 }
 @media (min-width: 764px) {
+  .masonry-list__item--pt100 {
+    padding-top: 100px;
+  }
+  .masonry-list__item--pt120 {
+    padding-top: 120px;
+  }
   .masonry-list__item:nth-of-type(1)::before {
     content: '';
     position: absolute;

@@ -4,19 +4,19 @@
     display: inline-block;
     max-width: 320px;
     margin: 0 auto;
-    &--pt100 {
-      padding-top: 100px;
-    }
-    &--pt120 {
-      padding-top: 120px;
-    }
     &--nmt150 {
       margin-top: -150px;
       @supports (display: grid) {
         margin-top: 0;
       }
     }
-    @media (min-width: 764px){
+    @media (min-width: 764px) {
+      &--pt100 {
+        padding-top: 100px;
+      }
+      &--pt120 {
+        padding-top: 120px;
+      }
       &:nth-of-type(1)::before {
         content: '';
         position: absolute;

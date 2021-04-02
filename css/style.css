@@ -224,6 +224,11 @@ html::-webkit-scrollbar-thumb {
       width: 70%;
       margin-left: auto; } }
 
+.nota-bene {
+  font-family: "MonumentExtended-Regular";
+  font-size: 1.2rem;
+  line-height: 1.5; }
+
 .project-list__item {
   position: relative;
   display: block;
@@ -326,19 +331,55 @@ html::-webkit-scrollbar-thumb {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: .5rem 0; }
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: .5rem; }
   .social-list__link {
     display: block; }
 
-.skills-list {
-  margin-top: 2rem; }
-  .skills-list__term {
-    margin-bottom: 5px; }
-  .skills-list__def {
-    margin-left: 40px;
-    margin-bottom: 15px; }
-  .skills-list__pre {
-    margin: 0; }
+.link {
+  position: relative; }
+  .link::before, .link::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 2px;
+    height: calc(100% + 2 * 0.5rem + 2px);
+    background-color: #fff;
+    z-index: -1; }
+  .link::before, .link::after {
+    opacity: 0;
+    -webkit-transition: all .6s;
+    transition: all .6s; }
+  .link::before {
+    left: 50%; }
+  .link::after {
+    right: 50%; }
+  .link:hover::before, .link:hover::after {
+    opacity: 1; }
+  .link:hover::before {
+    left: -0.5rem; }
+  .link:hover::after {
+    right: -0.5rem; }
+  .link:active {
+    color: #0a0a0a; }
+    .link:active::before, .link:active::after {
+      width: 100%; }
+
+.skills-list__term {
+  margin-bottom: 5px; }
+
+.skills-list__def {
+  margin-left: 40px;
+  margin-bottom: 15px; }
+
+.skills-list__pre {
+  margin: 0; }
 
 .flash-cursor {
   position: relative;
@@ -395,6 +436,10 @@ html, body {
   @media only screen and (min-width: 620px) {
     .about {
       font-size: 1.5rem; } }
+
+.project-menu__text {
+  margin-top: 2rem;
+  font-size: 1.2rem; }
 
 .project-list {
   font-size: 8vw; }
