@@ -37,6 +37,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   font-family: 'Cormorant', serif;
   font-size: 16px;
   font-style: normal;
@@ -135,6 +136,15 @@ img {
 .site-wrapper {
   min-width: 320px;
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .site-wrapper__section {
   margin-top: 67px;
@@ -256,8 +266,8 @@ img {
 @media (min-width: 764px) {
   .site-intro {
     min-height: 823px;
-    background-image: -webkit-linear-gradient(left, rgba(236, 229, 225) 0, rgba(236, 229, 225) 50px, #fff 50px, #fff 60%, rgba(236, 229, 225, 0.8) 60%, rgba(236, 229, 225, 0.8)), url("../../imgs/iamwoman-mobile-assets/icons8-team-355985-unsplash.jpg");
-    background-image: linear-gradient(to right, rgba(236, 229, 225) 0, rgba(236, 229, 225) 50px, #fff 50px, #fff 60%, rgba(236, 229, 225, 0.8) 60%, rgba(236, 229, 225, 0.8)), url("../../imgs/iamwoman-mobile-assets/icons8-team-355985-unsplash.jpg");
+    background-image: -webkit-linear-gradient(left, #ece5e1 0, #ece5e1 50px, #fff 50px, #fff 60%, rgba(236, 229, 225, 0.8) 60%, rgba(236, 229, 225, 0.8)), url("../../imgs/iamwoman-mobile-assets/icons8-team-355985-unsplash.jpg");
+    background-image: linear-gradient(90deg, #ece5e1 0, #ece5e1 50px, #fff 50px, #fff 60%, rgba(236, 229, 225, 0.8) 60%, rgba(236, 229, 225, 0.8)), url("../../imgs/iamwoman-mobile-assets/icons8-team-355985-unsplash.jpg");
     background-repeat: no-repeat;
     background-position: 0 0, right top;
     background-size: auto 120%;
@@ -266,8 +276,8 @@ img {
 @media (min-width: 1180px) {
   .site-intro {
     min-height: 840px;
-    background-image: -webkit-linear-gradient(left, rgba(236, 229, 225) 0, rgba(236, 229, 225) 75px, #fff 75px, #fff 50%, rgba(236, 229, 225, 0.8) 50%, rgba(236, 229, 225, 0.8)), url("../../imgs/iamwoman-mobile-assets/icons8-team-355985-unsplash.jpg");
-    background-image: linear-gradient(to right, rgba(236, 229, 225) 0, rgba(236, 229, 225) 75px, #fff 75px, #fff 50%, rgba(236, 229, 225, 0.8) 50%, rgba(236, 229, 225, 0.8)), url("../../imgs/iamwoman-mobile-assets/icons8-team-355985-unsplash.jpg");
+    background-image: -webkit-linear-gradient(left, #ece5e1 0, #ece5e1 75px, #fff 75px, #fff 50%, rgba(236, 229, 225, 0.8) 50%, rgba(236, 229, 225, 0.8) 100%), url("../../imgs/iamwoman-mobile-assets/icons8-team-355985-unsplash.jpg");
+    background-image: linear-gradient(90deg, #ece5e1 0, #ece5e1 75px, #fff 75px, #fff 50%, rgba(236, 229, 225, 0.8) 50%, rgba(236, 229, 225, 0.8) 100%), url("../../imgs/iamwoman-mobile-assets/icons8-team-355985-unsplash.jpg");
   }
   .site-intro::before {
     content: '';
@@ -281,6 +291,15 @@ img {
 }
 .site-intro__container {
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 @media (min-width: 764px) {
   .site-intro__description {
@@ -638,14 +657,14 @@ img {
 }
 @media (min-width: 764px) {
   .navlist--header {
-    background-image: -webkit-linear-gradient(left, rgba(236, 229, 225) 0, rgba(236, 229, 225) 50px, rgba(236, 229, 225, 0.7) 50px, rgba(236, 229, 225, 0.7) 60%, rgba(236, 229, 225, 0.8) 100%), url("../imgs/mobile-assets/lauren-fleischmann-469994-unsplash.jpg");
-    background-image: linear-gradient(to right, rgba(236, 229, 225) 0, rgba(236, 229, 225) 50px, rgba(236, 229, 225, 0.7) 50px, rgba(236, 229, 225, 0.7) 60%, rgba(236, 229, 225, 0.8) 100%), url("../imgs/mobile-assets/lauren-fleischmann-469994-unsplash.jpg");
+    background-image: -webkit-linear-gradient(left, #ece5e1 0, #ece5e1 50px, rgba(236, 229, 225, 0.7) 50px, rgba(236, 229, 225, 0.7) 60%, rgba(236, 229, 225, 0.8) 100%), url("../imgs/mobile-assets/lauren-fleischmann-469994-unsplash.jpg");
+    background-image: linear-gradient(to right, #ece5e1 0, #ece5e1 50px, rgba(236, 229, 225, 0.7) 50px, rgba(236, 229, 225, 0.7) 60%, rgba(236, 229, 225, 0.8) 100%), url("../imgs/mobile-assets/lauren-fleischmann-469994-unsplash.jpg");
   }
 }
 @media (min-width: 1180px) {
   .navlist--header {
-    background-image: -webkit-linear-gradient(left, rgba(236, 229, 225) 0, rgba(236, 229, 225) 75px, rgba(236, 229, 225, 0.7) 75px, rgba(236, 229, 225, 0.7) 60%, rgba(236, 229, 225, 0.8) 100%), url("../imgs/mobile-assets/lauren-fleischmann-469994-unsplash.jpg");
-    background-image: linear-gradient(to right, rgba(236, 229, 225) 0, rgba(236, 229, 225) 75px, rgba(236, 229, 225, 0.7) 75px, rgba(236, 229, 225, 0.7) 60%, rgba(236, 229, 225, 0.8) 100%), url("../imgs/mobile-assets/lauren-fleischmann-469994-unsplash.jpg");
+    background-image: -webkit-linear-gradient(left, #ece5e1 0, #ece5e1 75px, rgba(236, 229, 225, 0.7) 75px, rgba(236, 229, 225, 0.7) 60%, rgba(236, 229, 225, 0.8) 100%), url("../imgs/mobile-assets/lauren-fleischmann-469994-unsplash.jpg");
+    background-image: linear-gradient(to right, #ece5e1 0, #ece5e1 75px, rgba(236, 229, 225, 0.7) 75px, rgba(236, 229, 225, 0.7) 60%, rgba(236, 229, 225, 0.8) 100%), url("../imgs/mobile-assets/lauren-fleischmann-469994-unsplash.jpg");
   }
 }
 .navlist__layout {
@@ -878,8 +897,8 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 23px;
-  height: 23px;
+  width: 32px;
+  height: 32px;
   padding: 0;
   margin: 0;
   border: none;
@@ -890,9 +909,14 @@ img {
 .menu-close::after {
   content: '';
   position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   z-index: 1;
   display: block;
-  width: 141.421%;
+  width: 100%;
   height: 2px;
   background-color: #000;
 }
@@ -1011,6 +1035,15 @@ img {
 }
 .slider-intro {
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .slider-intro__nav {
   display: none;
@@ -1018,7 +1051,7 @@ img {
 @media (min-width: 764px) {
   .slider-intro__nav {
     position: relative;
-    bottom: 6px;
+    top: 3px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1778,6 +1811,7 @@ img {
   }
 }
 .blog-post__text {
+  width: 100%;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.05em;
@@ -2219,9 +2253,14 @@ img {
 }
 .reverse__link {
   position: absolute;
+  display: block;
   top: 0;
-  font-size: 3rem;
-  line-height: 1;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  font-size: 2.5rem;
+  line-height: 1.2;
   color: #0a0a0a;
   text-align: center;
 }

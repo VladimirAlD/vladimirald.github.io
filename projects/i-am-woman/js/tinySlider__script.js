@@ -59,3 +59,16 @@ const sliderBlog = tns({
     }
   }
 })
+
+var bg = document.querySelector('.js__bg-product');
+var re = /url(.+)/;
+sliderIntro.events.on('indexChanged', function(){
+  var bgStyle = window.getComputedStyle(bg).backgroundImage;
+  var slider = sliderIntro.getInfo();
+  var currentIndex = parseInt(slider.index);
+  var currentSlide = slider.slideItems[currentIndex];
+  var currentImg = currentSlide.querySelector('.product__img').src;
+  var newImg = 'url("' + currentImg + '")';
+  var newBgStyle = bgStyle.replace(re, newImg);
+  bg.style.backgroundImage = newBgStyle;
+});

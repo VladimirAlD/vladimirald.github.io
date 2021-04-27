@@ -6,6 +6,7 @@
   @media (min-width: 764px){
     @c1: transparent;
     @c2: #f8f8f8;
+    background-color: #fff;
     background-image: 
       url("../imgs/Voronina-desktop-assets/Sheet5.png"),
       url("../imgs/Voronina-desktop-assets/Sheet7.png"),
@@ -16,19 +17,19 @@
       url("../imgs/Voronina-desktop-assets/Sheet9.png"),
       url("../imgs/Voronina-desktop-assets/Sheet1.png"),
       url("../imgs/Voronina-desktop-assets/Sheet6.png"),
-      linear-gradient(to right,
-       @c1 11%,  
-       @c2 11%, @c2 calc(11% + 2px),  
-       @c1 calc(11% + 2px), @c1 36%, 
-       @c2 36%, @c2 calc(36% + 2px),
-       @c1 calc(36% + 2px)
+      linear-gradient(90deg,
+        @c1 11%,  
+        @c2 11%, @c2 11.25%,  
+        @c1 11.25%, @c1 36%, 
+        @c2 36%, @c2 36.25%,
+        @c1 36.25%
       ), 
-      linear-gradient(to right,
-        @c1 calc(36% + 2px), @c1 62%, 
-        @c2 62%, @c2 calc(62% + 2px),
-        @c1 calc(62% + 2px), @c1 88%, 
-        @c2 88%, @c2 calc(88% + 2px),
-        @c1 calc(88% + 2px), @c1 100%
+      linear-gradient(90deg,
+        @c1 36.25%, @c1 62%, 
+        @c2 62%, @c2 62.25%,
+        @c1 62.25%, @c1 88%, 
+        @c2 88%, @c2 88.25%,
+        @c1 88.25%, @c1 100%
       );
     background-repeat: no-repeat;
     background-position: 
