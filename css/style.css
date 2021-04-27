@@ -50,39 +50,51 @@ a {
   overflow: hidden; }
 
 @font-face {
+  font-family: 'Bigilla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Bigilla/Bigilla.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/Bigilla/Bigilla.eot?#iefix") format("embedded-opentype"), url("../fonts/Bigilla/Bigilla-Bold.woff2") format("woff2"), url("../fonts/Bigilla/Bigilla-Bold.woff") format("woff"), url("../fonts/Bigilla/Bigilla-Bold.ttf") format("truetype"); }
+
+/* noto-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/NotoSans/noto-sans-v12-latin_cyrillic-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/NotoSans/noto-sans-v12-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSans/noto-sans-v12-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/NotoSans/noto-sans-v12-latin_cyrillic-regular.woff") format("woff"), url("../fonts/NotoSans/noto-sans-v12-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/NotoSans/noto-sans-v12-latin_cyrillic-regular.svg#NotoSans") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
   font-family: 'MonumentExtended-Light';
-  src: url("../fonts/Monument/MonumentExtended-Light.woff2") format("woff2"), url("../fonts/Monument/MonumentExtended-Light.otf") format("opentype");
   font-style: normal;
   font-weight: 300;
-  font-display: swap; }
+  font-display: swap;
+  src: url("../fonts/Monument/MonumentExtended-Light.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/Monument/MonumentExtended-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Monument/MonumentExtended-Light.woff2") format("woff2"), url("../fonts/Monument/MonumentExtended-Light.woff") format("woff"), url("../fonts/Monument/MonumentExtended-Light.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'MonumentExtended-Regular';
-  src: url("../fonts/Monument/MonumentExtended-Regular.woff2") format("woff2"), url("../fonts/Monument/MonumentExtended-Regular.otf") format("opentype");
   font-style: normal;
   font-weight: 400;
-  font-display: swap; }
+  font-display: swap;
+  src: url("../fonts/Monument/MonumentExtended-Regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/Monument/MonumentExtended-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Monument/MonumentExtended-Regular.woff2") format("woff2"), url("../fonts/Monument/MonumentExtended-Regular.woff") format("woff"), url("../fonts/Monument/MonumentExtended-Regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'MonumentExtended-Black';
-  src: url("../fonts/Monument/MonumentExtended-Black.woff2") format("woff2"), url("../fonts/Monument/MonumentExtended-Black.otf") format("opentype");
   font-style: normal;
   font-weight: 900;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Bigilla';
-  src: url("../fonts/Bigilla/Bigilla-Bold.otf") format("opentype");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'NotoSans';
-  src: url("../fonts/NotoSans/NotoSans-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap; }
+  font-display: swap;
+  src: url("../fonts/Monument/MonumentExtended-Black.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/Monument/MonumentExtended-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Monument/MonumentExtended-Black.woff2") format("woff2"), url("../fonts/Monument/MonumentExtended-Black.woff") format("woff"), url("../fonts/Monument/MonumentExtended-Black.ttf") format("truetype"); }
 
 html::-webkit-scrollbar {
   width: 8px;
@@ -243,6 +255,7 @@ html::-webkit-scrollbar-thumb {
   white-space: nowrap;
   text-transform: uppercase;
   cursor: pointer;
+  opacity: 1;
   -webkit-transition: opacity .4s;
   transition: opacity .4s; }
   .project-list__link:hover {
@@ -259,8 +272,8 @@ html::-webkit-scrollbar-thumb {
   max-width: 120px;
   pointer-events: none;
   opacity: 0;
-  -webkit-transform: translate3d(calc(-100% - 6vw), -30%, 0) translate3d(0, 20px, 0);
-  transform: translate3d(calc(-100% - 6vw), -30%, 0) translate3d(0, 20px, 0); }
+  -webkit-transform: translate3d(-130%, -30%, 0) translate3d(0, 20px, 0);
+  transform: translate3d(-130%, -30%, 0) translate3d(0, 20px, 0); }
   @media only screen and (min-width: 540px) {
     .project-list__img {
       max-width: 150px; } }
@@ -270,6 +283,8 @@ html::-webkit-scrollbar-thumb {
 
 .project-list__link:hover + .project-list__img {
   opacity: 1;
+  -webkit-transform: translate3d(-130%, -30%, 0) rotate3d(0, 0, 1, 5deg);
+  transform: translate3d(-130%, -30%, 0) rotate3d(0, 0, 1, 5deg);
   -webkit-transform: translate3d(calc(-100% - 6vw), -30%, 0) rotate3d(0, 0, 1, 5deg);
   transform: translate3d(calc(-100% - 6vw), -30%, 0) rotate3d(0, 0, 1, 5deg);
   -webkit-transition: all .4s;
@@ -308,17 +323,25 @@ html::-webkit-scrollbar-thumb {
 
 @-webkit-keyframes marquee {
   0% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
     -webkit-transform: translate3d(calc(-25% + 20vw), 0, 0);
     transform: translate3d(calc(-25% + 20vw), 0, 0); }
   100% {
+    -webkit-transform: translateX(-25%);
+    transform: translateX(-25%);
     -webkit-transform: translate3d(calc(-50% + 20vw), 0, 0);
     transform: translate3d(calc(-50% + 20vw), 0, 0); } }
 
 @keyframes marquee {
   0% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
     -webkit-transform: translate3d(calc(-25% + 20vw), 0, 0);
     transform: translate3d(calc(-25% + 20vw), 0, 0); }
   100% {
+    -webkit-transform: translateX(-25%);
+    transform: translateX(-25%);
     -webkit-transform: translate3d(calc(-50% + 20vw), 0, 0);
     transform: translate3d(calc(-50% + 20vw), 0, 0); } }
 
