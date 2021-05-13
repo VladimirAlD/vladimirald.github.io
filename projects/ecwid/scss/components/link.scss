@@ -2,10 +2,6 @@
   position: relative;
   display: inline-block;
 
-  &--underscore {
-    box-shadow: 0 4px 2px -2px $black;
-  }
-
   &::before,
   &::after {
     content: '';
@@ -38,7 +34,6 @@
   $disp: -0.5rem;
 
   &:hover {
-    box-shadow: none;
 
     &::before,
     &::after {
