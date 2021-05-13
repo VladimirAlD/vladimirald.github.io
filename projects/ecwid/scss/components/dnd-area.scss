@@ -1,0 +1,67 @@
+.dnd-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+
+  @media #{$mq-620-up} {
+    height: 200px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 8px);
+    height: 100%;
+    border: 4px solid $black;
+  }
+
+  // border animation (Animation and transition for pseudo-elements is not supported by IE11)
+  &__vb,
+  &__hb {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    background-color: $body-bg;
+    transform: scale(1);
+    transition: transform .5s ease-in-out;
+  }
+
+  // ::before vertical
+  &__vb {
+    top: -5px;
+    left: 40px;
+    width: calc(100% - 80px);
+    height: calc(100% + 10px);
+  }
+
+  // ::after horisontal
+  &__hb {
+    top: 40px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% - 80px);
+  }
+
+  &--hl {
+    .dnd-area__vb {
+      transform: scale(0, 1);
+    }
+
+    .dnd-area__hb {
+      transform: scale(1, 0);
+    }
+  }
+
+  .dnd-area__text {
+    text-align: center;
+    line-height: 1.5;
+  }
+}
