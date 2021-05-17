@@ -159,8 +159,6 @@ a {
 .link {
   position: relative;
   display: inline-block; }
-  .link--underscore {
-    box-shadow: 0 4px 2px -2px #0a0a0a; }
   .link::before, .link::after {
     content: '';
     position: absolute;
@@ -181,14 +179,12 @@ a {
     left: 50%; }
   .link::after {
     right: 50%; }
-  .link:hover {
-    box-shadow: none; }
-    .link:hover::before, .link:hover::after {
-      opacity: 1; }
-    .link:hover::before {
-      left: -0.5rem; }
-    .link:hover::after {
-      right: -0.5rem; }
+  .link:hover::before, .link:hover::after {
+    opacity: 1; }
+  .link:hover::before {
+    left: -0.5rem; }
+  .link:hover::after {
+    right: -0.5rem; }
   .link:active {
     color: #fff; }
     .link:active::before, .link:active::after {
