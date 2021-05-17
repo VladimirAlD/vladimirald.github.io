@@ -197,21 +197,21 @@ var masonry = {
         }
       };
     }
-    var deleteBtns = document.querySelectorAll('.js__deleteItem');
-    var btnsArray = Array.prototype.slice.call(deleteBtns);
-    btnsArray.forEach(function (el) {
-      // onclick for only one handler
-      el.onclick = function () {
-        for (var i = 0; i < document.querySelectorAll('.gallery__item img').length; i++) {
-          if (el.parentNode.querySelector('img').src == document.querySelectorAll('.gallery__item img')[i].src) {
-            break;
+    masonry.imgsContainer.addEventListener('click', function (event) {
+      var deleteBtns = document.querySelectorAll('.js__deleteItem');
+      var btnsArray = Array.prototype.slice.call(deleteBtns); // ie fix
+      var target = event.target;
+
+      if (target && target.classList.contains('js__deleteItem')) {
+        btnsArray.forEach(function (v, i) {
+          if (target == v) {
+            masonry.imgsData.splice(i, 1);
+            masonry.resizedImgsData.splice(i, 1);
+            v.parentNode.remove();
+            masonry.initLayout();
           }
-        }
-        masonry.imgsData.splice(i, 1);
-        masonry.resizedImgsData.splice(i, 1);
-        el.parentNode.remove();
-        masonry.initLayout();
-      };
+        });
+      }
     });
   },
   initLayout: function (fillLastRow) {
