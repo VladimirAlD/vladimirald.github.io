@@ -1,0 +1,61 @@
+<!doctype html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="theme-color" content="#264255"><title>CQG Frontend task - Реализация отображения графа репозитория</title><script defer="defer" src="main.0fa5ecd20a927db2678d.js"></script><link href="main.0fa5ecd20a927db2678d.css" rel="stylesheet"></head><body class="site-body"><main class="site-main"><header class="site-header"><div class="container"><h1 class="title">Тестовое задание<span class="title__sub">Реализация отображения графа репозитория</span></h1></div></header><div class="container"><div class="content"><form class="content__repoform repoform"><textarea class="repoform__textarea textarea js__textarea" id="txt-area">
+{
+  "commits": [{
+    "hash": "1",
+    "text": "initial commit",
+      "time": "2021-01-01T15:45:07Z",
+      "previous": []
+    },
+    {
+      "hash": "2",
+      "text": "commit 2",
+      "time": "2021-01-02T23:59:00Z",
+      "previous": ["1asdf"]
+    },
+    {
+      "hash": "3",
+      "text": "commit 3",
+      "time": "2021-02-05T11:11:11Z",
+      "previous": ["2"]
+    },
+    {
+      "hash": "4",
+      "text": "commit 4",
+      "time": "2021-02-06T11:11:11Z",
+      "previous": ["2"]
+    },
+    {
+      "hash": "5",
+      "text": "commit 5",
+      "time": "2021-02-07T11:11:11Z",
+      "previous": ["3"]
+    } ,   {
+      "hash": "6",
+      "text": "commit 6",
+      "time": "2021-02-08T11:11:11Z",
+      "previous": ["3", "4"]
+    },
+    {
+      "hash": "7",
+      "text": "commit 7",
+      "time": "2021-02-09T11:11:11Z",
+      "previous": ["6"]
+    },
+    {
+      "hash": "8",
+      "text": "commit 8",
+      "time": "2021-02-10T11:11:11Z",
+      "previous": ["5", "7"]
+    }
+  ],
+  "tags": [{
+    "commit": "3",
+    "tag": "branch/a"
+  },
+  {
+    "commit": "4",
+    "tag": "rel/1x0"
+  }
+]
+}
+          </textarea> <button class="repoform__btn btn js__btn" type="submit">Построить</button></form><section class="content__view-area view-area"><h2 class="view-area__title">Граф репозитория</h2><div class="view-area__graph graph"><div class="graph__frame js__frame"></div><div class="graph__legend"><ul class="legend js__legend"></ul></div></div><div class="view-area__commit-info js__info"></div></section></div></div></main></body></html>

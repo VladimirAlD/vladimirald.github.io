@@ -1,0 +1,48 @@
+// @mixin transform($property) {
+//   -webkit-transform: $property;
+//   -ms-transform: $property;
+//   transform: $property;
+// }
+// .box { @include transform(rotate(30deg)); }
+
+// This CSS will print because %message-shared is extended.
+// %message-shared {
+//   border: 1px solid #ccc;
+//   padding: 10px;
+//   color: #333;
+// }
+// .message {
+//   @extend %message-shared;
+// }
+
+@mixin media-tablet {
+  @media (min-width: $mediaWidthTablet) {
+    @content;
+  }
+}
+
+@mixin media-tablet-horizontal {
+  @media (min-width: $mediaWidthTabletHorizontal) {
+    @content;
+  }
+}
+
+@mixin media-laptop {
+  @media (min-width: $mediaWidthLaptop) {
+    @content;
+  }
+}
+
+@mixin media-custom($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin clear-fix($where) {
+  &:#{$where} {
+    clear: both;
+    content: '';
+    display: block;
+  }
+} 
