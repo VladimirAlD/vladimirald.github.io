@@ -30,8 +30,6 @@ function newGraph(rawD: string, pathWidth: number, circleRadius: number, padding
   graphContainer.innerHTML = '';
   graphLegendContainer.innerHTML = '';
   addHtml(graphLegendContainer, commits, segments, circleRadius, paddingTop);
-  console.log('segments');
-  console.log(segments);
   // Create a Pixi Application
   let app = new PIXI.Application({
     width: segments.width,
@@ -100,7 +98,6 @@ function getRelatedLayout(commits) {
         (parentCommit[0] == prevCommit && parentCommit[0] == main[main.length - 1]) ||
         parentCommit[0] == main[main.length - 1]) {
         main.push(i);
-        console.log('push on main' + commits[i].hash);
       } else {
         relatedLayout[i].x.unshift(0);
         if (parentCommit[0] != prevCommit && relatedLayout[i].x.length == relatedLayout[lastDispCommit].x.length) {
@@ -134,9 +131,6 @@ function getRelatedLayout(commits) {
         lastDispCommit = i;
       }
     }
-
-    console.log(main);
-    console.log(i);
   }
   return relatedLayout;
 }
